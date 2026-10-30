@@ -11,7 +11,7 @@ Pauli–Fierz 模型の紫外の極限についての研究を、[Claude Code](h
 - 論文 I:[The sharp leading asymptotics of the self-energy of the spinless Pauli–Fierz model](https://arxiv.org/abs/2610.34122)
 - 論文 II:[The effective mass of the Pauli–Fierz electron: a cutoff-independent lower bound and the breakdown of mass renormalization](https://arxiv.org/abs/2610.34125)
 - 付属コード:[pauli-fierz-uv-limit-code](https://github.com/tabayashi0117/pauli-fierz-uv-limit-code)
-- 関連する解説:[Rikai の Pauli–Fierz 模型の記事](https://rikai.mugen-giken.com/physics/fock-space/pauli-fierz-model)
+- 解説:[Rikai の研究ノート(論文 I・II の案内)](https://rikai.mugen-giken.com/physics/fock-space/research-2026-10-u)
 
 どちらも 2026-10-28 に [Communications in Mathematical Physics](https://link.springer.com/journal/220) に投稿しました(査読中)。ここに書いた検証は AI の監査と私の確認によるもので、外部の査読はこれからです。
 
@@ -33,7 +33,7 @@ Papers report only the paths that worked. Most of this study was approaches trie
 - Period: 2026-09-02 to 2026-10-28
 - Paper I: [arXiv:2610.34122](https://arxiv.org/abs/2610.34122); Paper II: [arXiv:2610.34125](https://arxiv.org/abs/2610.34125)
 - Ancillary code: [pauli-fierz-uv-limit-code](https://github.com/tabayashi0117/pauli-fierz-uv-limit-code)
-- Background (in Japanese): [the Pauli–Fierz article on Rikai](https://rikai.mugen-giken.com/physics/fock-space/pauli-fierz-model)
+- Notes (in Japanese): [guide to the Rikai research notes on Papers I and II](https://rikai.mugen-giken.com/physics/fock-space/research-2026-10-u)
 
 Both papers were submitted to [Communications in Mathematical Physics](https://link.springer.com/journal/220) on 2026-10-28 and are under review. The checks described here were done by AI audits and by me; external peer review is still ahead.
 

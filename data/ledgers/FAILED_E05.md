@@ -55,7 +55,7 @@
 - 〔2026-10-26 注記(w_E05_728、本文は変えない):本節の標的 $h\lesssim\lambda^{c\alpha}$ は $c\alpha\lt1$ の域で E05-P374(v-b)により偽 —— 再挑戦条件 R5′・R6 は劣線形の標的として失効(流れの恒等式など収穫の記録は有効)。〕
 
 ## F6 — 「Gross 変換の最小結合版で PF の Fock 空間内 $\Lambda\to\infty$ 極限を構成する」(ROADMAP G3-2 の核心路線)
-- 日付: 2026-09-03(16_、最上位のモデル)
+- 日付: 2026-09-03(16_、Fable)
 - 分類: 手法の失敗(障害を命題として同定)
 - 正確な障害: (命題1)$x$ 依存位相の Nelson 型 Weyl 作用素は作用素値ゲージ変換で横成分 $A_S$ に触れない。(命題2)Gross 選択 $T_S=-\frac{ie}{m}\mathbf Y_S(x)\cdot\pi_\Lambda$($\mathbf Y_S$=Welton 零点変位、可換族)は
   Q 空間表現で確率的体積保存微分同相として真のユニタリを与え、殻の $O(e^2)$ を局所反項 $\frac{\pi^2}{2m}(1-\delta m_S/m)$ で吸収するが、Doppler 残差 $R_D\propto e\gamma_k(k\cdot v)(\rho\cdot v)$ が $H^{3/2}$-形有界にしかならず、対項は無傷。
@@ -80,7 +80,7 @@
 - 記録: `18_対セクターのBogoliubovRG_転進A.md`(命題A–D、self-audited)、(研究ノート: `18_pair_sector_bogoliubov.py`)。
 
 ## F8 — 「殻内2光子相関 $f(\Lambda)$ の $\lambda$ 減衰をモーメント法(光子数・2次モーメント)で示す」(R6)
-- 日付: 2026-09-03(17_、最上位のモデル)
+- 日付: 2026-09-03(17_、Fable)
 - 分類: 手法の失敗(障害を命題として同定)
 - 正確な障害: (a) 2次モーメント(Chebyshev、定理1)は $f_k(\theta)\le\frac{k^2M_0}{3m^2(\mu_k-\theta)^2}=O(\alpha)$ を $\Lambda$ 一様に与えるが、これは鋭い: $\theta=\mu_k/2$ の質量は摂動2次で $0.035\alpha$ に収束し(連続体数値、$\lambda\le3000$)、$\lambda$ 減衰しない。その質量は $\epsilon\sim\mu_k/3$ にあり流れには無害($O(\alpha^2m)$)だが、Chebyshev は $\theta=\mu_k/2$ と危険な $\theta\sim C\Lambda$(1光子質量は $\asymp\alpha\lambda^{-5/2}$)に同じ上界を与え、閾値情報を原理的に失う。分散は $`\|k\cdot v\psi_0\|^2/m^2`$ で $eA$ の生成部分が支配するため、対配位($P_f\approx-k$ の硬い光子)の重みは分散から分離できない。
   (b) 光子数ルート: $`p_{\ge2}=\|P^S_{\ge2}\psi_0\|^2\le\frac12\langle N_S^2\rangle`$ の非摂動評価は Lemma 7 の分母 $\omega+\mathcal E\le2|k|$(補題8)により $\langle N_S\rangle\lesssim\alpha^2\lambda^2$ と発散(14_ §4.2 と同じ壁)。仮に $p_{\ge2}\lesssim\alpha^2$ が得られても、$O(\Lambda)$ チャネルの重みは「対の総運動量 $\approx-k$」という角度相関で、光子数では表せない。
@@ -94,7 +94,7 @@
   > 実質的に生きている転進先は 3 番目（Q3 否定側の直接攻撃 = B16）だけである。
 
 ## F9 — 「GHL 2014 型の汎関数積分（Feynman–Kac–Itô）で、対相互作用を Gauss 支配してフル PF の $\Lambda$ 一様評価を得る」(経路①の入口)
-- 日付: 2026-09-09(19_、w101/最上位のモデル)
+- 日付: 2026-09-09(19_、w101/Fable)
 - 分類: 手法の失敗(障害を命題として同定)。**経路①そのものは生存**し、§6 の再定式化へ転進する。
 - 前提(自前導出、19_ §2): 真空‐真空 FKI は $`\bigl(f\otimes\Omega,e^{-tH_\Lambda}g\otimes\Omega\bigr)=\int dx\,\bar f\,\mathbb E^x_W[g(B_t)e^{-\int V}e^{-\frac{e^2}2\sigma^2_\Lambda(B)}]`$、$`\sigma^2_\Lambda(B)=\int_0^t\!\!\int_0^t W^{\mu\nu}_\Lambda(B_s-B_r,s-r)dB^\mu_sdB^\nu_r`$、$W^{\mu\nu}_\Lambda(x,\tau)=\int_{|k|\le\Lambda}\frac{d^3k}{(2\pi)^32|k|}(\delta_{\mu\nu}-\hat k_\mu\hat k_\nu)e^{ikx}e^{-|k||\tau|}$。Coulomb ゲージで $`\nabla\!\cdot\!A_\Lambda=0`$ が作用素の恒等式ゆえ**伊藤補正は恒等的に 0**（Itô = Stratonovich）。$\frac{e^2}{2m}A_\Lambda^2$ は独立な項ではなく $\sigma^2_\Lambda$ の **Itô 対角**そのもの。
 - 正確な障害: (命題A)$P(k)=\delta-\hat k\hat k$ は半正定値で $W_\Lambda$ は正定値核だから $\sigma^2_\Lambda\ge0$。横射影は符号を壊さない（発注時の見立ての訂正）。壊れるのは減算後である。(命題B)Itô 等長より $\mathbb E_B[\sigma^2_\Lambda]=\frac tm\mathop{\mathrm{tr}}W_\Lambda(0,0)=\frac{t\Lambda^2}{4\pi^2m}$ が**厳密**に成り立ち（$=\frac{e^2}{2m}\langle A^2\rangle t=\frac{\alpha t\Lambda^2}{2\pi m}$、決定論的）、これを引いた残差 $\sigma^2_{\Lambda,\rm off}$ は厳密に中心化されて両符号をとる。(命題C)その分散は $`\mathrm{Var}(\sigma^2_{\Lambda,\rm off})\simeq\frac{4t}{m^2}K_2(\Lambda)\simeq5.6\times10^{-3}\,t\Lambda^2/m`$ で**冪発散**する（$K_2=\int_0^t\mathbb E[\mathop{\mathrm{tr}}W_\Lambda(B_s-B_r,\tau)^2]d\tau\simeq1.40\times10^{-3}m\Lambda^2$、$\Lambda=8..4096$ の 10 段で局所冪が $2.066,2.047,2.034\to2$、相対補正 $\sim\Lambda^{-0.4}$）。ゆえに $\sigma^2_{\Lambda,\rm off}$ は $L^2$ 極限を持たず、GHL 2014 の図式「発散 = 対相互作用の**対角部** = 決定論的な対数定数 ⇒ それを引けば残りが収束し $\mathbb E[e^{(\text{残り})}]$ が $\Lambda$ 一様有限」は**第 1 段から偽**。定数（エネルギー）反項をどう選んでも $\Lambda$ 一様な $L^1$ 評価はこの図式から出ない。(命題D)原因は 2 点で、いずれも修復不能: ①結合が $ds$ でなく $dB$（Nelson は $\int\phi(B_s)ds$、PF は $\int A\cdot dB_s$）、②2 次モーメントでは反跳因子が $e^{-|k+k'|^2\tau/2m}$ の形でしか掛からないため**背中合わせ対 $k'\simeq-k$ が反跳抑制を免れる**（F6 命題3 の $`\|\beta\|^2_{HS}\propto\sqrt{\Lambda/m}`$、F7 命題D の $|k+q|\lesssim\sqrt{m\Lambda}$ と同一機構が汎関数積分側に現れたもの）。伊藤補正による冪の相殺は $`\nabla\!\cdot\!A=0`$ より原理的に起こらない。
@@ -103,7 +103,7 @@
 - 記録: `19_汎関数積分での対相互作用のGauss支配_経路1.md`(self-audited、留保 R1: FKI 表示は Trotter+Gauss 積分の形式的導出で Hiroshima の厳密表示と未照合、R2: 分散は直接 Wick 縮約のみで $e^{ik(B_s-B_r)}$ に当たる縮約が未評価 — **独立監査の 2 標的**)、(研究ノート: `50_fki_pair_kernel.py`) と `_output.txt`。
 
 ## F10 — 「R5′: 予算消費形 (3.2) を殻双一次形式から Cauchy–Schwarz 抜きで直接示し、$f(\Lambda)$ の問題を迂回する」
-- 日付: 2026-09-09(20_、w103、最上位のモデル)
+- 日付: 2026-09-09(20_、w103、Fable)
 - 分類: 手法の**部分的成功 + 標的の一部の閉鎖**(1光子チャネルは設計できた。対チャネルは原理的に閉鎖)
 - 正確な障害:
   (命題1)(3.2) は $`h\,\kappa_{\rm flow}\le(1-\delta)\frac{3m}{2}`$ と同値。$h$ は非有界なので、$\kappa_{\rm flow}$ の上界に
@@ -173,7 +173,7 @@
   命題6 の帰着は片方向のみ。
 
 ## F12 — 「再帰的 Chebyshev（17_ §7）で殻内2光子相関 $f(\Lambda)$ の $\lambda$ 減衰を示す」(経路⑥)
-- 日付: 2026-09-09(22_、w105/重いモデル)
+- 日付: 2026-09-09(22_、w105/Opus)
 - 分類: 手法の失敗(障害を4つの命題として同定)。**F8 の再挑戦条件の消尽**。
 - 正確な障害:
   (a) **分解能障害(命題1)**。pull-through は厳密には $`X\,a_j^*(k')=a_j^*(k')(X_{k+k'}+\omega')+\frac em g_j(k')\cdot(k+v)`$(補題A、$P$ 一般で導出)であり、非斉次項 $Z_j$ は横波性で消えない($g_j(k')\perp k'$ であって $\perp k$ ではない)。$`\Xi:=e\,k\cdot a^*(g)\psi_0`$ に対し $(X-\tilde X)\Xi$ は $\psi_0$ 方向の**コヒーレント**な残差で、$`\|(X-\tilde X)\Xi\|/\|\Xi\|=\Delta_{\min}=\frac{|k|}{m}\sqrt{M_0/3}`$。$|k|\asymp\Lambda$、$\theta=\Lambda\lambda^s$ に対し $\Delta_{\min}/\theta=\lambda^{1-s}\sqrt{\alpha/3\pi}$ で、$s\lt1$ の全てで発散する。逃れられる $s=1$($\theta\asymp\mu_k$)では Chebyshev が閾値を見分けない(17_ 命題5(d))。再帰が閾値を分解できるのは $`\lambda\ll3.07\,C/\sqrt\alpha`$ のみで、Landau スケール $\alpha^{-1}$ どころか $\alpha^{-1/2}$ の手前で失効する。
@@ -187,7 +187,7 @@
 - 出典: `22_再帰的Chebyshevのkillcheck.md`(self-audited、§7 に敵対的セルフレビュー)、(研究ノート: `80_recursive_chebyshev_window.py`)。
 
 ## F13 — 「R7: 一般方向ファイバーでの $\mathcal E(P)$ の下界で pull-through の分母を稼ぎ、$f(\Lambda)$ を制御する」(14_ §7 の R7、F12 の転進先(i))
-- 日付: 2026-09-09(26_、w109/重いモデル)
+- 日付: 2026-09-09(26_、w109/Opus)
 - 分類: **標的の失格**(下界そのものは真かつ部分的に証明できたが、Q3 に対して原理的に無力であることが確定)。
   F12 の転進先(i) の閉鎖、および 14_ §7 の再挑戦条件 R7 の閉鎖。
 - 正確な障害:
@@ -207,7 +207,7 @@
   (研究ノート: `2026-09-09_w109_R7.md`)。
 
 ## F14 — 「N3: 反跳の自己無撞着 Gauss 閉包（Feynman 変分型）で $\gamma=\frac{d\ln h}{d\ln\lambda}$ を予言する」(19_ §6.2 N3、B11 の安い kill-check)
-- 日付: 2026-09-09(29_、w112/重いモデル)
+- 日付: 2026-09-09(29_、w112/Opus)
 - 分類: 手法の失敗（機構を命題として同定）。**B11（経路測度の拡散係数）そのものは生存**し、N1 側（29_ 命題1〜4）へ資源を移す。
 - 前提（自前導出、29_ §3.1）: $\mathbb E_\mu[e^{ik\cdot(B_{s+\tau}-B_s)}]\to e^{-k^2R(\tau)/6}$、$R(\tau)=\mathbb E_\mu|B_{s+\tau}-B_s|^2$ と横射影の角度平均 $\frac23\delta^{\mu\nu}$ により、有効核は $`w(\tau)=\frac{1}{6\pi^2}\int_0^\Lambda k\,e^{-k\tau-k^2R(\tau)/6}dk`$、速度スペクトル $S_v(\omega)=[m+e^2\hat w(\omega)]^{-1}$、$R(\tau)=\frac{3\tau}{\pi}\int_0^\infty\frac{2(1-\cos y)}{y^2}\frac{dy}{m+e^2\hat w(y/\tau)}$、$h=1+\frac{e^2\hat w(0)}{m}$ で閉じる。
 - **閉包は正しく作れている**（この 2 本は捨てないこと）: (A) $R\equiv0$（反跳なし）で $h=1+\frac{4\alpha}{3\pi}\lambda$（双極子の厳密解）、(B) $R=3\tau/m$（自由 Brown、非自己無撞着）で $h=1+\frac{8\alpha}{3\pi}\ln(1+\frac\lambda2)$（E05-F1）を、**いずれも係数まで解析的に厳密再現**する。数値実装もこの 2 本を相対差 $\le5.6\times10^{-4}$（求積誤差のみ）で通す。自己無撞着解は $\gamma\to\frac{8\alpha}{3\pi}$（$\gamma/g$ が $\alpha=0.03,0.1,0.3,1.0$ で $0.977,0.923,0.793,0.523$、$\lambda\ge10^4$ で 4 桁一定、$\alpha=1$ でも $\gamma=0.44\lt1$ で双極子上界と整合）。解析的にも $w(\tau)\simeq\frac{M(\tau)}{6\pi^2\tau}$ と $d\ln(1/\tau)=2d\ln k_*$ から $\frac{dh}{d\ln k}=gh$、$h\simeq(\lambda/2)^g$、$g=\frac{8\alpha}{3\pi}$。
@@ -219,7 +219,7 @@
 - 記録: `29_Gibbs経路測度の拡散係数_B11.md`(self-audited、§3 と §5、留保: (G5) 19_ の FKI 表示が Hiroshima の厳密表示と未照合、S8 閉包の変分的正当化は無い、S10 本項は E05-L1 を公理として受け入れる限りの不一致であって閉包の誤りの証明ではない)、(研究ノート: `52_selfconsistent_R_closure.py`) と `_output.txt`・`_result.json`(conclusion=`INCONCLUSIVE`)、(研究ノート: `2026-09-09_w112_B11.md`)。
 
 ## F15 — 「$\langle N_S\rangle$ の $\lambda$ 冪の改良を、エネルギー上界・反跳分母・和則のいずれかから取る」(U2 の 3 系統)
-- 日付: 2026-09-09(33_、w116/重いモデル)
+- 日付: 2026-09-09(33_、w116/Opus)
 - 分類: **手法の失敗（3 系統の閉鎖）＋ 標的の再定式化**。無条件の改良は得られなかったが、
   1 体量 $\langle N_S\rangle$ に関する (U2) が (U1) の十分条件下で解けることを示したので、
   **未証明項目としての旧 (U2) は独立性を失う**。ただし稿 31_ の再編成により律速は対量
@@ -274,7 +274,7 @@
   (研究ノート: `2026-09-09_w116_U2.md`)。
 
 ## F16 — 「$\ell=1$ セクター内の余次元 1 の直交化 $\langle\beta,q_\nu\alpha_0\rangle=0$ で U4′（対凝縮との共鳴）を回避し、有用な下界を残す」
-- 日付: 2026-09-09（稿 `37_delta2のλ冪.md`、w120/重いモデル。稿 31_ §4.3 → 36_ (T1) の筋）
+- 日付: 2026-09-09（稿 `37_delta2のλ冪.md`、w120/Opus。稿 31_ §4.3 → 36_ (T1) の筋）
 - 分類: **機構の閉鎖（摂動的）**。存在言明は真だが到達点が $\lambda$ 一様に $O(\alpha^2)$ 倍まで落ちる。
 - 正確な障害:
 
@@ -1049,7 +1049,7 @@ $\langle v^2\rangle=2m(E_0-\Theta)\lt3\sqrt{mS/2}$。向きが逆なので否定
   ＝ **命題 59-3 そのもの**。新規の内容は無い。
 - **判定**: 棄却。**この二律背反を追う発注をしてはならない。**
   対セクター（背中合わせ対）を使う枝は反跳で死なないので、B20 は依然として未解決である。
-- 出所: (研究ノート: `59_Zの一様下界_audit60_2026-09-11.md`) (R4)、2026-09-11、audit60（重いモデル, effort=high）。
+- 出所: (研究ノート: `59_Zの一様下界_audit60_2026-09-11.md`) (R4)、2026-09-11、audit60（Opus, effort=high）。
 
 ---
 
@@ -1100,7 +1100,7 @@ $\langle v^2\rangle=2m(E_0-\Theta)\lt3\sqrt{mS/2}$。向きが逆なので否定
   **を課す**（audit61 (R4)(b) が独立検算。$1-\frac1h\lt1$ だけから出るので $h$ の真値を要しない。**十分条件ではない**）（命題 58-2 の精度階段の $\sqrt\lambda$ 版。**稿 58_ §4.4 が $\sqrt\lambda$ 標的を
   「精度を要さない」側に分類していたのは誤り**）。
 - **判定**: 棄却（naive 形）。**B20 本体は条件付き閉鎖。** 出所: 稿 `60_対セクターのΛ一様性.md` 命題 60-2、
-  2026-09-11、w143（重いモデル, effort=high）。格付け `self-audited`（未監査。再監査等級 S2）。
+  2026-09-11、w143（Opus, effort=high）。格付け `self-audited`（未監査。再監査等級 S2）。
 
 ---
 
@@ -1413,7 +1413,7 @@ $\lesssim\alpha^2\lambda^2$（F8）で弱すぎるので、現時点で (X2-b) �
   退化核による 3 件の「一様性の破れ」は下界法では無意味で、障害は $\psi_0$ の性質 O1〜O6 に移る（**本数は減らない**）。
 - **射程**: 命題W119-4（B16 の到達点の天井＝上界側）では $\sup_{\beta\in V}$ が本質であり、本 F は上界側の量化子を否定しない。
 
-**監査記録**: (研究ノート: `70_量化子の再設計_audit71_2026-09-11.md`)（audit71、S2 full fresh、重いモデル、effort=high、**壊しに行く立場**）。
+**監査記録**: (研究ノート: `70_量化子の再設計_audit71_2026-09-11.md`)（audit71、S2 full fresh、Opus、effort=high、**壊しに行く立場**）。
 **中心主張の命題 70-3 は (R1) で 4 経路すべてから壊しに行って壊せなかった＝PASS。** 本 F の連結は audit71 (R6) の
 処方 P-8（2 件の差し替え）適用後に親が実施。**罠は T56 に登録。**
 **⚠ 稿 70_ の格付けは `self-audited` のまま**（記述誤り 1 件＝命題 70-1 の内積空間、列挙の取りこぼし 1 件＝O6 を
@@ -1527,7 +1527,7 @@ $`\bigl(\int|g|\,\|a_3\psi_0\|\bigr)^2`$ で、**これがこの評価鎖に残�
 (研究ノート: `2026-09-11_w151_c1alpha項の非摂動化.md`) §1・§5・§6、
 (研究ノート: `130_w151_eA0_channel_checks.py`)（`conclusion: PASS`）。
 
-**監査記録**: (研究ノート: `68_c1alpha項の非摂動化_audit73_2026-09-11.md`)（audit73、S2 full fresh、重いモデル、effort=high、**壊しに行く立場**）。
+**監査記録**: (研究ノート: `68_c1alpha項の非摂動化_audit73_2026-09-11.md`)（audit73、S2 full fresh、Opus、effort=high、**壊しに行く立場**）。
 **(R1) 結論 PASS / 初稿の証明 FAIL。** 監査人は**反例鎖を 1 本構成した**（(iv) を pull-through で $\mathcal K$ に帰着させると
 要求は $\mathcal K=O(m^2/\alpha\lambda)$ のみで $\Theta$ は自由になり、初稿の「$E_0=O(\Lambda)$ で矛盾」という論法が届かない）。
 **同じ監査人が補題 68-2′ を 1 行足して穴を塞ぎ、結論はむしろ強い形になった**（「$\mathcal K$ と $\Theta$ のどちらに帰着させても死ぬ」）。
@@ -1623,7 +1623,7 @@ $W_{S,Q}$ の最悪点（$s=\Lambda$、$|q|=Q$、$\lambda\gt2$ で到達）で
 **出典**: 稿 `73_XiPlusMinusの交差項.md`、(研究ノート: `2026-09-11_w156_XiPlusMinusの交差項.md`) §2–§7、
 (研究ノート: `140_w156_cross_terms_reassembly.py`)（`conclusion: PASS`、入力 hash は `_result.json`）。
 
-**監査記録**: (研究ノート: `73_XiPlusMinusの交差項_audit76_2026-09-11.md`)（audit76、S2 full fresh、重いモデル、effort=high、**壊しに行く立場**）。
+**監査記録**: (研究ノート: `73_XiPlusMinusの交差項_audit76_2026-09-11.md`)（audit76、S2 full fresh、Opus、effort=high、**壊しに行く立場**）。
 **(R1) 結論 PASS / 証明 PASS＝壊せず。** 監査人が要求 (R)・$\lambda=\alpha^{-2}$・余裕 $\alpha^{-1/2}$ を独立再導出して逐語一致させ、
 さらに $\rho\ge(1+\sqrt{2/\lambda})^{-1}\to1$・$\kappa=\frac13$ の等号を示して**「3 定数に鈍感」を証明に格上げ**し、
 **窓の真の閾値を $\alpha\lt\frac{\sqrt\pi C_1}{2\kappa'}$ に改善した**（稿より 1 段強い kill）。
@@ -4579,7 +4579,7 @@ audit158 の独立再実装（模型から書き起こし、最上殻 6/12 モ�
 - **値の裏づけ(【T88】)**:C0 (研究ノート: `566_w_E05_386_tooljourney_wegner_toy.py`)(1 光子・1 次元の LLP 玩具):低帯の固有ベクトルの $\langle\partial_sH\rangle/(s/m)$ の最小 = −0.021・−0.236・−0.368(λ=8・16・32)—— スペクトル平均の下限は無い。閉鎖の理由は字面で、値は使わない。
 - **共通点(1 行)**:**照合した全ての道具は、基準の測度の構造(対数凹・独立・正値 Gauss 混合・実の指数)か、重みの対角の決定的な相殺か、雲の半古典的な局在を前提に置き、PF の反跳の位相がその全てを壊す —— 双極子では全ての道具が入口を自明に満たす(F169・F183・F188 の共通点の文献の側からの再確認)。**
 - **R9**:閉じたのは方式。双極子では ①② は真(Gauss)—— 障害は位相に局在し消滅していない。
-- **射程(T60)**:禁じるのは「照合した 18 行の道具をそのまま PF の ①②③ に移す」形の発注。止めないもの:最上位のモデル 384 の時間局所の正規化(② の本体);Malliavin の密度の上界(385);低帯で正の交換子を持つ新しい生成子の構成;原典未照合の行([要確認])の字面の照合。
+- **射程(T60)**:禁じるのは「照合した 18 行の道具をそのまま PF の ①②③ に移す」形の発注。止めないもの:Fable 384 の時間局所の正規化(② の本体);Malliavin の密度の上界(385);低帯で正の交換子を持つ新しい生成子の構成;原典未照合の行([要確認])の字面の照合。
 - **再開条件**:(1) 非対数凹・位相つきの重みの経路測度で、点ごとの曲率なしに増分の密度の上界を出す一般の定理が文献に現れたとき;(2) 低帯のスペクトル部分空間の上で正の交換子を持つ母数が見つかったとき;(3) 経路に依る対角の相殺項について、閉じた経路と開いた経路の窓の重みの比の比較原理が立ったとき(384 の成果に依る)。
 
 ## F191(E05、全列(行 E1-H の内側)の供給を**確率量子化**(Parisi–Wu:反跳つき Gibbs 測度 $\mathcal N$ を不変測度に持つ Langevin 方程式と過程の結合;場の変数の Langevin を含む)で出す方式。2026-10-20、w_E05_387_longshots = 書き下しの型、稿 `387_全列23_可能性の低い未検討事項の成算_2026-10-20.md` §2 (1)、成算 S194)

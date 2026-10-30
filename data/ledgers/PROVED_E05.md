@@ -39,7 +39,7 @@ B16 の分母の緩みのうち $O(e^4)$ 部分を**構造的に**分離する�
 
 **証明**: 31_ (U4-2) に射影 $P_{\psi_0}$ を 1 枚挟み、$L^2(W)$ で Cauchy–Schwarz。稿 `63_` §2。
 
-**監査記録**: (研究ノート: `63_a枝の別実装_audit64_2026-09-11.md`)（audit64、S2 full fresh、重いモデル、effort=high）。
+**監査記録**: (研究ノート: `63_a枝の別実装_audit64_2026-09-11.md`)（audit64、S2 full fresh、Opus、effort=high）。
 **(R1) PASS**。監査人が射影 1 枚と $L^2(W)$ の CS を**独立に再導出**し、
 **稿が挙げた仮定のうち「30_ 命題1 の定義域条件」「奇・Bose 対称」は不要**と判定した
 （＝**主張は稿が書いたより広い**）。規約の因子 2 も正しい。処方 P-1〜P-14 反映済み。
@@ -88,7 +88,7 @@ $P_f$ 側（対–対反跳）と $eA(0)$ 側（場との結合）に**厳密に
 **証明**: 2 回の pull-through（30_ §3.1 (3.1)–(3.3) を $a_2$ に当て、$a_1$ を $R_2$ に通す）と、
 第 2 行は固有方程式 $D_{12}\psi_0=(\frac{q\cdot\pi}{m}+s+u)\psi_0$ の代入 + $\pi$ の線形分解。稿 `65_` §2、worklog w148 §2.1。
 
-**監査記録**: (研究ノート: `65_Nperpの非摂動上界_audit65_2026-09-11.md`)（audit65、S2 full fresh、重いモデル、effort=high）。
+**監査記録**: (研究ノート: `65_Nperpの非摂動上界_audit65_2026-09-11.md`)（audit65、S2 full fresh、Opus、effort=high）。
 **(R1) PASS**。監査人が両行を**独立に（worklog §2.1 を読まずに）再導出し、符号・因子とも逐語一致**。
 **稿が挙げた (A-min) は不要に強く、(A-min′) で足りる**（$s\ge|q|$ による）。
 一方**稿は $`\|\psi_0\|=1`$ と $\psi_0\in D(N_S)$ を挙げ落としており、これらは必要**。
@@ -139,7 +139,7 @@ $\mathcal E_A^{\rm c}\gt0$ なので (2.4) の不等号の向きは保たれ、$
 
 **証明**: 稿 `64_` §2 の経路 1（$[F^*,XY]=[F^*,X]Y+X[F^*,Y]$ による完全展開）と経路 2（$\psi_0=\Omega$ 直接）。
 
-**監査記録**: (研究ノート: `64_EAの符号_audit66_2026-09-11.md`)（audit66、S2 full fresh、重いモデル、effort=high）。
+**監査記録**: (研究ノート: `64_EAの符号_audit66_2026-09-11.md`)（audit66、S2 full fresh、Opus、effort=high）。
 **(R3) PASS**。監査人が**経路 1 を全部独立に書き下し**（c 数を出す縮約はちょうど 4 本と自分で数え、
 $`\frac{e^2}{2m}\|g_\nu\|^2`$ が 2 本出ることまで一致）、**経路 2 を逐行検算**し、
 **経路 3（有限モード厳密 ED）を独立に再実装**した（(研究ノート: `123_audit66_EA_algebra.py`)、
@@ -205,7 +205,7 @@ $w=\beta$、$v=q_\nu\beta$ を入れ、$\beta$ と $q_\nu\beta$ の対称性か�
 (ii) $\mathrm d\Gamma(S)\mathrm d\Gamma(T)=\mathrm d\Gamma(ST)+\mathcal Q(S\otimes T)$（$a_2a_3^*=a_3^*a_2+\delta_{23}$ を 1 回）を
 反交換子の**両方の順序に別々に**当て、1 体項が $`\mathrm d\Gamma(\{M_\nu,K'_\nu\})`$ に合流する。稿 `66_` §2.1・§3（補題 A）。
 
-**監査記録**: (研究ノート: `66_密度型4次ブロック_audit69_2026-09-11.md`)（audit69、S2 full fresh、重いモデル、effort=high）。
+**監査記録**: (研究ノート: `66_密度型4次ブロック_audit69_2026-09-11.md`)（audit69、S2 full fresh、Opus、effort=high）。
 **(R1) PASS**。監査人が (i)(ii) を稿を追認せず独立に書き下し、さらに占有数基底で Fock 空間を明示的に組んだ
 **直接 ED**（(研究ノート: `129_audit69_direct_contraction.py`)、M=5 モード・一般のランダム 3 次元運動量・
 $N_{\max}=4$・dim 126・seed 690911・input_hash `56add02d2b99e764`）で
@@ -308,7 +308,7 @@ $\forall\lambda\ge1\ \forall\alpha\in(0,1]$ で $`\rho:=\|K\|_{op}^2\le\frac{64\
 
 **証明と監査記録**: 稿 `67_X2bの準自由版.md` 命題 67-1・系 67-1a・漸近 67-1b、
 (研究ノート: `2026-09-11_w150_X2bの準自由版.md`)、(研究ノート: `127_w150_Nperp_qf.py`)。
-監査: (研究ノート: `67_X2bの準自由版_audit68_2026-09-11.md`)（audit68、S2 full fresh、重いモデル、effort=high）。
+監査: (研究ノート: `67_X2bの準自由版_audit68_2026-09-11.md`)（audit68、S2 full fresh、Opus、effort=high）。
 独立再実装: (研究ノート: `128_audit68_Nperp_qf_recheck.py`)（座標と内側変数を変えた別求積。5 段、
 $t/\sqrt\lambda$・$\mathcal D\sqrt\lambda$ とも稿の表と $10^{-4}$／$0.07\%$ で一致、解析値と Richardson で整合）。
 
@@ -359,7 +359,7 @@ $V=0$ のフル PF について $h=h(\lambda,\alpha)$、$\lambda=\Lambda/m$ と�
 **証明**: $m_\Lambda=\Lambda/\lambda$ の置換（$m\gt0\leftrightarrow\lambda\gt0$ は全単射）で
 $`\{h(\Lambda/m)m:m\gt0\}=\{\Lambda h(\lambda)/\lambda:\lambda\gt0\}`$。稿 `58_` §3.1。
 
-**監査記録**: (研究ノート: `58_Q3否定側_命題58-1_audit70_2026-09-11.md`)（audit70、**S1 差分監査**、軽いモデル）。
+**監査記録**: (研究ノート: `58_Q3否定側_命題58-1_audit70_2026-09-11.md`)（audit70、**S1 差分監査**、Sonnet）。
 **(R1)(R2)(R3)(R5)(R6) PASS、(R4) 要修正（軽微・既知）**。
 audit59（S2 full fresh）が (R4) で **FAIL** としたのは命題本体ではなく**唯一の検証事例（双極子）の算術**で、
 稿が $h_{\rm dip}=(1-g\lambda)^{-1}$ と書いたため $\Lambda_c^{\rm dip}=\frac{3\pi m_{\rm ph}}{16\alpha}$ となり
@@ -455,7 +455,7 @@ L[\beta]\ \lt\ \Bigl(\sqrt{2(1-\eta^*)+2\tilde\delta^{\,2}}-\tilde\delta\Bigr)^2
 > 各点形が効くのは **B16 を証人 1 本で使うとき**（70_ 命題 70-3）で、そのとき必要なのは $\eta[\beta_1]\lt1$ だけである。
 
 **証明と監査記録の所在**: 稿 `69_epsilon_resの非摂動化.md` §4.2（証明）、§8（敵対的セルフレビュー）、
-(研究ノート: `69_epsilon_resの非摂動化_audit72_2026-09-11.md`)（audit72、S2 full fresh、重いモデル、effort=high）。
+(研究ノート: `69_epsilon_resの非摂動化_audit72_2026-09-11.md`)（audit72、S2 full fresh、Opus、effort=high）。
 数値は使わない。使う等式は **Bessel の不等式（36_ 補題W119-A、$\alpha_0^\Omega$ 版）・非負項の切り捨て・Cauchy–Schwarz・
 1 変数の最大化**の 4 つのみで、audit72 が全段を独立に再導出して一致を確認した。
 **$\varepsilon_{\rm res}=L/2$（36_ 命題W119-3 の 1 ループ段）を使っていないことを `grep` で確認済み**（audit72 (R2-3)）。
@@ -555,7 +555,7 @@ $\Lambda$ 一様性の機構は 2 次反跳 $\frac{|q+k_3|^2}{2m}$ が $\omega_3
 **証明**: $\omega_3$ を $2|q|$ で 2 分割し、外側で角度に依らない下界 $\sigma_3\gt s+\frac{\omega_3^2}{8m}$ を使う初等求積。
 稿 `68_` §4。**Schur テストでも Hilbert–Schmidt 評価でもない**（c 数関数の $L^2$ ノルムの明示計算）。
 
-**監査記録**: (研究ノート: `68_c1alpha項の非摂動化_audit73_2026-09-11.md`)（audit73、S2 full fresh、重いモデル、effort=high）。
+**監査記録**: (研究ノート: `68_c1alpha項の非摂動化_audit73_2026-09-11.md`)（audit73、S2 full fresh、Opus、effort=high）。
 **(R2) PASS。** 監査人が稿の証明を写さずに定義から**盲目再導出**し、2 領域の値
 $J_a\le\frac{8\pi q^2}{3s^2}$・$J_b\le\frac{16\pi m}{3s}$・最終係数 $\frac{16\alpha}{3\pi}$ が**逐語一致**。
 退化例（$q=0$、$2|q|\gt\Lambda$）でも破綻しないことを確認。
@@ -600,7 +600,7 @@ $\pi$ と $P_f$ は別作用素なので **E05-P5 の $`\|P_f\psi_0\|\le cm\lamb
 $\psi_0\in D(H)\subset\mathcal Q(\pi^2)=\bigcap_\nu D(\pi_\nu)$。
 $E_0$ の上界は Fock 真空 $\Omega$ による変分（$`\langle\Omega,H\Omega\rangle=\frac{e^2}{2m}\sum_\nu\|c_k\epsilon_\nu\|_2^2=\frac{\alpha m\lambda^2}{2\pi}`$）。稿 `68_` §5.1。
 
-**監査記録**: (研究ノート: `68_c1alpha項の非摂動化_audit73_2026-09-11.md`)（audit73、S2 full fresh、重いモデル、effort=high）。
+**監査記録**: (研究ノート: `68_c1alpha項の非摂動化_audit73_2026-09-11.md`)（audit73、S2 full fresh、Opus、effort=high）。
 **(R3) PASS。** 監査人が独立に再導出し、$`\sum_\nu\|c_k\epsilon_\nu\|_2^2=\frac{\Lambda^2}{4\pi^2}`$ から
 $\langle\Omega,H\Omega\rangle=\frac{\alpha\Lambda^2}{2\pi m}$ を再現。定義域の扱い（$\mathcal Q(\pi^2)=\bigcap_\nu D(\pi_\nu)$）が正しいことを確認。
 **⚠ 監査人の所見: 等式部分は $\langle\psi_0,H\psi_0\rangle=E_0$ の逐語の書き下しであり、追加の内容は無い**
@@ -691,7 +691,7 @@ $\tilde\delta$ は 69_ (4.3) の量（**$\beta$ 非依存**、$\lt\infty$ を仮
    空になるのは $\sup$ 形（第 2 式）だけである。**
 
 **証明と監査記録の所在**: 稿 `71_H_etastarの成否.md` §3・§4（証明）、§7（敵対的セルフレビュー）、
-(研究ノート: `71_H_etastarの成否_audit74_2026-09-11.md`)（audit74、S2 full fresh、重いモデル、effort=high）。
+(研究ノート: `71_H_etastarの成否_audit74_2026-09-11.md`)（audit74、S2 full fresh、Opus、effort=high）。
 audit74 は 69_ §4.2 の 6 段を独立に辿り、段 6 の 1 変数最大化 $\sup_zg=2+\tilde\delta^2/\kappa$ と
 $z^*=(2\kappa+\tilde\delta^2)/\tilde\delta$ を独立に再導出、30_ (2.4)・30_ 命題1・36_ (3.1) を逐語照合した。
 
@@ -952,7 +952,7 @@ $\mathcal U_1$ 側の冪 $\alpha\lambda^{3/2}$ と閾値 $\lambda\lesssim\alpha^
 **証明と監査記録の所在**: 稿 `76_N_S二乗のΛ一様上界.md`（`verifier-backed`、§5 に 18 項目の敵対的セルフレビュー）、
 worklog (研究ノート: `2026-09-12_w161_N_S二乗のΛ一様上界.md`)、
 数値（代数の検査のみ、C0、PASS）(研究ノート: `145_w161_master_inequality_check.py`) と `..._output.txt`・`..._result.json`。
-**監査記録**: (研究ノート: `76_N_S二乗のΛ一様上界_audit78_2026-09-12.md`)（audit78、S2 full fresh、重いモデル、effort=high）。
+**監査記録**: (研究ノート: `76_N_S二乗のΛ一様上界_audit78_2026-09-12.md`)（audit78、S2 full fresh、Opus、effort=high）。
 **(R1)〜(R7) すべて PASS**（母不等式・$R_{\mathcal U}$ の $\beta$ 一様上界・$p$ の値・条件 (i)・床・(S0) の死因・(D0)）。
 監査人は交換子の閉形 (3.3)・測度定数 (3.2)・(3.4)・(3.11)–(3.13)・(4.1) の 3 項・命題 76-5 の 3 比較・
 命題 76-3 の 3 冪と交点を独立に再導出し、**稿 §6 が「未検査」と自認した測度定数 $\frac{3\Lambda^2}{16\pi^2}$ を
@@ -1100,7 +1100,7 @@ $`\frac1{2m}\|(\pi+k_1)\phi\|^2\le\langle\phi,H(-k_1)\phi\rangle`$（$H_f\ge0$�
 $\langle\phi,K_1\phi\rangle=\langle R_1v,v\rangle\le\mathcal K/\omega_1$ と $\mathcal K\le2mE_0$（E05-P10）。
 3. は 1.・2. と測度 $`\mu=\sum_\lambda\int_Sd^3k\,c_k^2=\frac{3\Lambda^2}{16\pi^2}`$、$e^4=16\pi^2\alpha^2$。4. は代入。稿 `79_` §2–§3。
 
-**監査記録**: (研究ノート: `79_pull-throughの再開_audit81_2026-09-12.md`)（audit81、S2 full fresh、重いモデル、effort=high）。
+**監査記録**: (研究ノート: `79_pull-throughの再開_audit81_2026-09-12.md`)（audit81、S2 full fresh、Opus、effort=high）。
 **(R1)(R2)(R4) PASS。** 監査人が補題 79-A の打ち消し・測度・前因子・冪を**独立に再導出**し、
 $\mu$ を **6 次元 Monte Carlo**（w164 は Gauss–Legendre）で $1.5\sigma$ 一致、$\frac9{16\pi^2}$ を 16 桁一致、
 局所傾きを $3.9997$（一般）・$3.4285=\frac{24}7$（遠紫外）で再現（(研究ノート: `153_audit81_ceiling_and_measure.py`) A1–A3）。
@@ -1245,7 +1245,7 @@ $\max_{\hat q}M_{\hat q}(q,s)/M_{\hat q}(0,0)=1.021$ で (M) も破る。audit82
 
 ## E05-P19（$\mathcal E_A^{\rm full}$ の $A^2$ 部の $\beta$ 一様な下界 — $\mathcal E_A^{\rm c}$ を吸収体にした平方完成。$\Lambda$ 一様ではない）
 
-**格付け**: **`verifier-backed`（限定付き）**（2026-09-12）。稿 `81_`（w167、`self-audited`）を **audit85** が独立監査した（(研究ノート: `81_E_A_fullの上界_audit85_2026-09-12.md`)、重いモデル、effort=high。**(R2)(R5) は「壊しに行く」立場逆転の発注**）。監査人は (a) 稿 77_ §1.2 の恒等式と Leibniz 則を**稿を見ずに書き下してから照合**し（$`\|g_\nu\|^2`$ が 2 本出る出所まで一致）、(b) 平方完成の 5 段と定数連鎖を独立に再導出し、(c) 有限モード Fock 空間（$M=3$、$\psi_0$ の光子数 $\le2,3,4$ の 3 段）で 1. の恒等式を相対 $10^{-16}$ で再現したうえ、2. の第 1 式の破れ比 $`(-\mathrm{Re}\,\mathcal E_A^{A^2})/\text{右辺}`$ を $(\psi,\beta,u)$ について最大化して探索した（(研究ノート: `159_audit85_constants_and_square_completion.py`)、seed 850912）。**破れは見つからなかった。** **限定**: 下の射程に加え、**2. の第 1 式は $`\|\psi_0\|=1`$ 以外に $\psi_0$ の性質を使わないので任意の正規化状態で成立する（稿より強い）。第 2 式の定数だけが $\psi_0=$ 基底状態に依存する。**
+**格付け**: **`verifier-backed`（限定付き）**（2026-09-12）。稿 `81_`（w167、`self-audited`）を **audit85** が独立監査した（(研究ノート: `81_E_A_fullの上界_audit85_2026-09-12.md`)、Opus、effort=high。**(R2)(R5) は「壊しに行く」立場逆転の発注**）。監査人は (a) 稿 77_ §1.2 の恒等式と Leibniz 則を**稿を見ずに書き下してから照合**し（$`\|g_\nu\|^2`$ が 2 本出る出所まで一致）、(b) 平方完成の 5 段と定数連鎖を独立に再導出し、(c) 有限モード Fock 空間（$M=3$、$\psi_0$ の光子数 $\le2,3,4$ の 3 段）で 1. の恒等式を相対 $10^{-16}$ で再現したうえ、2. の第 1 式の破れ比 $`(-\mathrm{Re}\,\mathcal E_A^{A^2})/\text{右辺}`$ を $(\psi,\beta,u)$ について最大化して探索した（(研究ノート: `159_audit85_constants_and_square_completion.py`)、seed 850912）。**破れは見つからなかった。** **限定**: 下の射程に加え、**2. の第 1 式は $`\|\psi_0\|=1`$ 以外に $\psi_0$ の性質を使わないので任意の正規化状態で成立する（稿より強い）。第 2 式の定数だけが $\psi_0=$ 基底状態に依存する。**
 
 **命題**（稿 `81_E_A_fullの上界.md` 命題 81-1・81-2。設定は E05-P12 と同じ: $\Lambda\lt\infty$、$V=0$、$P=0$、スピンなし）。
 記号は稿 77_ §1.1（$u_\nu$ 実、$g_\nu=\beta u_\nu$、$h_\nu=\beta\beta^*u_\nu$、$b_\nu=a(g_\nu)$、$c_\nu=a(h_\nu)$、$T_\nu=[P_{f\nu},F]$）、
@@ -1368,7 +1368,7 @@ $`\sum_\nu\|\pi_\nu\psi_0\|\le\sqrt3\|\pi\psi_0\|`$、$e^2=4\pi\alpha$。最後�
 **証明**: 稿 `85_奇部の上界.md` §3（作用素上界 + Cauchy–Schwarz。$[F_\beta^*,F_\gamma]=\frac12\langle\beta,\gamma\rangle_2+\mathrm d\Gamma(\gamma\overline\beta)$ の閉形を含む）・§4・§5・§7。
 **数値**: (研究ノート: `165_w172_odd_bound_algebra_checks.py`)（3 段 $n_{\max}=5,6,7$・別 seed・別モード数、`conclusion: PASS`）。選択則・交換子の閉形・作用素上界 4 本・パリティ直交の等式・CS 連鎖の成立を検査。**$K_\nu=\beta^*(q_\nu\beta)$ は残差 $10.3$ で棄却され $K_\nu=(q_\nu\beta)\overline\beta$ が正しい**（作用素ノルムは同じなので上界は不変）。
 **独立再実装**: (研究ノート: `166_audit87_odd_bound_independent.py`)（audit87、seed 870912。Fock 空間を自前構成し 3 段 $(M,n_{\max})=(3,5)/(4,5)/(3,6)$ で閉形を残差 $\le9.4\times10^{-14}$ で再現、$K=\beta^*\gamma$ を残差 $\sim10^2$ で棄却、$K_{\rm correct}=K_{\rm wrong}^{\mathsf T}$ と作用素ノルムの一致を確認）、`166b_`（§4 の 6 定数・$C_{\rm odd}$・$U_S^2$・作用素支配）、`166c_`（§7.2 の不足量表と遠紫外枝の冪を厳密有理数演算で再計算。`conclusion: COUNTEREXAMPLE`）。
-**監査記録**: (研究ノート: `85_奇部の上界_audit87_2026-09-12.md`)（audit87、重いモデル、effort=high。**(R3)(R4) は立場逆転の破壊監査**）。**(R1)(R2)(R6)-1 PASS。(R3) FAIL**（$\epsilon_0$ の不足は $t^{3/2}$／一致の 3 つは (7.1) の双線形対称性から強制＝T87／スロットは独立でない／遠紫外枝では揃わない）。**(R4) は $t\ge1$ で条件付き PASS**（ただし (7.1) は E05-P20 の偶側 $\Pi^{\ge2}_{\rm ev}$ を使っていない）。**(R5) 1 件**、**(R6)-2 要訂正**。$K=\beta^*\gamma$ への依存は全リポジトリ grep で**ゼロ**（波及なし）。
+**監査記録**: (研究ノート: `85_奇部の上界_audit87_2026-09-12.md`)（audit87、Opus、effort=high。**(R3)(R4) は立場逆転の破壊監査**）。**(R1)(R2)(R6)-1 PASS。(R3) FAIL**（$\epsilon_0$ の不足は $t^{3/2}$／一致の 3 つは (7.1) の双線形対称性から強制＝T87／スロットは独立でない／遠紫外枝では揃わない）。**(R4) は $t\ge1$ で条件付き PASS**（ただし (7.1) は E05-P20 の偶側 $\Pi^{\ge2}_{\rm ev}$ を使っていない）。**(R5) 1 件**、**(R6)-2 要訂正**。$K=\beta^*\gamma$ への依存は全リポジトリ grep で**ゼロ**（波及なし）。
 
 ---
 
@@ -1486,7 +1486,7 @@ $\lambda=8,32,128,512,2048,8192,32768,131072$ で $1.418,1.392,0.714,0.342,0.140
 ## E05-P26（$R_2$ のファイバー分解 — $\varsigma$ を含まない大きさの上界と、**負部分の $\Lambda$ 一様な下界**）
 
 **格付け**: **`verifier-backed`**（2026-09-12）。稿 `86_R_2の1ループ値.md` 命題 86-1・86-2・86-3 を **audit89** が **S2 full fresh audit** で独立に再導出した
-（(研究ノート: `86_R_2の1ループ値_audit89_2026-09-12.md`)、重いモデル、effort=high。**(R3)(R4) は「壊しに行く」立場逆転の発注**）。
+（(研究ノート: `86_R_2の1ループ値_audit89_2026-09-12.md`)、Opus、effort=high。**(R3)(R4) は「壊しに行く」立場逆転の発注**）。
 **1.・2.・3. はすべて PASS。反転は 1 件も無い。** 監査人は (a) 核表示の向きと Fubini を稿を見ずに書き下してから照合し、
 (b) (a)(b)(c) の各段（とくに $`\|C\gamma\|\le2\delta\|\rho_{\Omega'}\|_{op}\|\gamma\|`$ の正当性）を独立に再導出し、
 (c) **$`\{0\le\rho\le I\}`$ を尽くす閉形式**（$\forall\rho\ge0$ ではない。audit90 が訂正）$`\min_{0\le\rho\le I}\mathrm{Re}\langle\gamma,\rho D\gamma\rangle=\frac12(\langle\gamma,D\gamma\rangle-\|D\gamma\|\|\gamma\|)`$ を導いて
@@ -1589,7 +1589,7 @@ $R_2$ も $D_{\rm free}$ も厳密に $N$ 倍になり比が不変であるこ�
 ## E05-P28（$R_2$ の負部分の **窓を使わない** $\Lambda$ 一様下界 — 反跳項 $u$ が窓の代わりをする。**親が採番。T55**）
 
 **格付け**: **`verifier-backed`**（2026-09-12。**PATCH-1〜PATCH-6 適用後**）。audit89 自身の新規主張を **audit90** が
-**S2 full fresh audit** で独立に再導出した（(研究ノート: `E05-P28_audit90_2026-09-12.md`)、重いモデル、effort=high。**(R1)(R2) は「壊しに行く」立場逆転の発注**）。
+**S2 full fresh audit** で独立に再導出した（(研究ノート: `E05-P28_audit90_2026-09-12.md`)、Opus、effort=high。**(R1)(R2) は「壊しに行く」立場逆転の発注**）。
 **1. の閉形式・2. の (a)・3. の鋭さはすべて PASS。反例は 0 件。** 監査人は (i) 閉形式を稿を見ずに
 $K=\frac12(ab^*+ba^*)$（$a=D\gamma$、$b=\gamma$）の固有値から再導出し、(ii) 3 行の連鎖を独立に書き下し、
 (iii) $\cos\theta=-1$ への被約でファイバーの $\inf$ を**凸最小化（Dinkelbach + Frank–Wolfe、大域最適）**として解き、
@@ -1677,7 +1677,7 @@ $\gamma_{k'}=0$ のファイバーは両辺 $0$ で寄与しない）。$\blacks
 
 ## E05-P29（窓と反跳の等価性 — **$\mathcal A=W_{S,Q}$ 上・窓版を基線にすれば反跳項は $\lambda$ の冪を生まない**。機構の射程の確定。**⚠ 基線依存: 窓も反跳も使わない素の上界を基線にすれば反跳は窓と同じ $\lambda^{-1}$ を買い（`E05-P28`）、$S\times S$ 上で窓を $Q\to2\Lambda$ に広げる経路を基線にすれば $|q|$ 1 本あたり $\lambda^{1/2}$ を買う（本項 6. の系）。audit109 R3**）
 
-**格付け**: **`verifier-backed`**（2026-09-13。audit109a（軽いモデル、算術）＋ audit109（監査の型、S2 合同。(研究ノート: `87_90_audit109_2026-09-13.md`) R1〜R3）。
+**格付け**: **`verifier-backed`**（2026-09-13。audit109a（Sonnet、算術）＋ audit109（監査の型、S2 合同。(研究ノート: `87_90_audit109_2026-09-13.md`) R1〜R3）。
 **⚠ 基線依存の注記（PATCH P22）付きで昇格**: 「冪を生まない」は $\mathcal A=W_{S,Q}$ 上・窓版を基線にした主張。再監査等級 S0〜S1（反映済）。
 旧格付け: `candidate`（稿 `87_ファイバー反跳機構の射程.md` 命題 87-1・87-3、§7 の敵対的セルフレビュー。**親が採番。T55**）。
 
@@ -1808,7 +1808,7 @@ $2.2\times10^{-16}$／$0$ で再現、閉形式を超えたサンプル **0 件*
 ## E05-P31（$`\|P_f\psi_0\|`$ の 1 ループ**値**の閉形式と、$`\|P_f\psi_0\|`$ の厳密な和則 — 在庫 `E05-P5` は $\lambda$ 冪で $\sqrt\lambda$ 緩い）
 
 **格付け**: **`verifier-backed`（1.・2.・4.〜6.）／`self-audited`（3.）**（2026-09-12）。稿 `88_`（w175）を **audit91** が
-S2 full fresh audit で独立監査した（(研究ノート: `89_88_audit91_2026-09-12.md`)、重いモデル、effort=high。`E05-P32` との合同）。
+S2 full fresh audit で独立監査した（(研究ノート: `89_88_audit91_2026-09-12.md`)、Opus、effort=high。`E05-P32` との合同）。
 監査人は 2 光子振幅・偏極和・前因子・$X$ 積分の閉形・0 次斉次性・$K_0=\frac{8\ln2+1}3$ を**立式から独立に再導出**し、
 $\mathcal I$ を**別経路**（$X$ 積分を閉形式で実行）で再現した（稿の表と $5\times10^{-5}$ 以内。
 (研究ノート: `175_audit91_independent_checks.py`)、seed 910912）。
@@ -1891,7 +1891,7 @@ $m=1$、seed 1750912、`conclusion: PASS`）。冪は最後の 2 段で $p=2.015
 ## E05-P32（$\langle A(0)^2\rangle_0\le\langle A(0)^2\rangle_\Omega=\frac{\Lambda^2}{4\pi^2}$ — 場の揺らぎは真空を超えない。機構は E05-F23 と同一の「純虚の線形結合」）
 
 **格付け**: **`verifier-backed`**（2026-09-12）。稿 `89_A2の相対補正.md`（w176）を **audit91** が S2 full fresh audit で
-独立監査した（(研究ノート: `89_88_audit91_2026-09-12.md`)、重いモデル、effort=high）。監査人は (a) **原典 `Fiber.tex` で (H-FK) を逐語確認**し、
+独立監査した（(研究ノート: `89_88_audit91_2026-09-12.md`)、Opus、effort=high）。監査人は (a) **原典 `Fiber.tex` で (H-FK) を逐語確認**し、
 (b) **中間時刻挿入の出典が Thm 3.3 ではなく同論文 Cor 4.3（+ Thm 4.2・Lemma 3.10）であることを同定**し、
 (c) Gauss 公式・下半連続性・$t\to\infty$ の 4 段を独立に再導出し、(d) 波及 3 件を厳密有理数で再計算し、
 (e) $P\ne0$ で本当に壊れることを独立に確認した（(研究ノート: `175_audit91_independent_checks.py`)、seed 910912）。
@@ -1929,7 +1929,7 @@ $j_tf(\cdot-b(t))$ と Brown 位置ぶん平行移動される）。**⟹ 証明
 
 ## E05-P33（パリティ共役と奇部の変分恒等式 — $H_{\rm e}=\frac12(H(e)+H(-e))\ge E_0$、$\delta$ の 3 表示、**ギャップ経路の空虚性**）
 
-**格付け**: **`verifier-backed`（1.〜6.）／`self-audited`（7.）**（2026-09-13。audit109a（軽いモデル）＋ audit109（監査の型、S2 合同。R7〜R10）。
+**格付け**: **`verifier-backed`（1.〜6.）／`self-audited`（7.）**（2026-09-13。audit109a（Sonnet）＋ audit109（監査の型、S2 合同。R7〜R10）。
 **⚠ 4. の空虚性の $\inf$ は $\mathcal F_{\rm odd}$ 全体および soft 光子が到達できる部分空間に限る（殻セクター $N_S\ge1$ の $g_S$ には及ばない。PATCH P23）——**この射程限定は (D1) とは無関係なので残る**。(D1) 条件は 2026-09-13 に外れた（稿 `121_`、audit120）。7. の「(c) は (a) の道具を要求する」はパリティ変分の経路に留まる限りの条件付き（Q 空間表示・FK 表示は別。R10）。**
 2. の $H_{\rm o}$ の符号は正本規約 $\pi=P_f+eA(0)$ に合わせて audit110 が訂正済（稿 `90_` は $\pi=P_f-eA$ 規約で自己整合、規約注記のみ追記）。
 旧格付け: `self-audited`（2026-09-12、w177、稿 `90_epsilon2の上界.md` §7）。
@@ -2772,7 +2772,7 @@ y_8=\tfrac12\sum_\mu\iint|P_1P_2\eta_\mu|^2W_2+\tfrac2m\mathrm{Re}\sum_\mu\int\!
 **⚠【2026-09-13 w197 → w198 で更新】`E05-L4` の原典確認は完了した**（w198 が PDF `math-ph/9908020` v2 p.1–7 を直読）。モデルクラス（spinless・鋭い切断・$V=0$・$E_0=\inf\sigma(H)$）と不等式は逐語一致。残る留保は **1 つだけ**: **原典は「$\alpha$ 固定・$\Lambda$ 大の漸近命題」であり閾値 $\Lambda_0(\alpha)$ を与えない**（本文逐語）。**⟹ 本命題の冪（$p=5/7$）は $\alpha$ 固定で $\lambda\to\infty$ の主張なので `E05-L4` の射程内で、失効しない（⚠ (N111) の方は `E05-L4` の閾値とは無関係に `E05-P62` 3. で**偽**と確定した。この文を「(N111) は生きている」と読まないこと）。正しい修正は「条件 $\lambda\gtrsim\alpha^{-5/2}$ を $\lambda\ge\max(\Lambda_0(\alpha),(2\pi C_2)^{7/2}\alpha^{-5/2})$ と読む」ことだけである**（(研究ノート: `2026-09-13_w198_L4の射程.md`) §2.2）。$m^{-5/7}$ は単位系からの復元で正しい（同 §1.4）。
 **【親注記 2026-09-13】audit104 自身の導出なので `self-audited` 止め。**⚠ 独立監査が要る（S2 候補）**。E05-L4 の $E_0$ 上界に全面依存するので、Lieb–Loss 1999 の原典 1 手確認（スピン・正則化・m 依存の規約）が別途要る。**
 
-**格付け**: **`verifier-backed`**（2026-09-13。1.・2. は audit108a（軽いモデル、算術）＋ audit108（監査の型、S2。(研究ノート: `P59_audit108_2026-09-13.md`)）。PATCH P1〜P9・P11 適用済。**3. は縮小後の内容（$D_q\le\frac{\mathcal K}{3\Lambda}$ と (N110)⟹(N109) の含意）のみ**。
+**格付け**: **`verifier-backed`**（2026-09-13。1.・2. は audit108a（Sonnet、算術）＋ audit108（監査の型、S2。(研究ノート: `P59_audit108_2026-09-13.md`)）。PATCH P1〜P9・P11 適用済。**3. は縮小後の内容（$D_q\le\frac{\mathcal K}{3\Lambda}$ と (N110)⟹(N109) の含意）のみ**。
 **⚠ 2. は `E05-L4` に全面依存: $\alpha$ 固定・$\lambda\ge\lambda_0(\alpha)$ の漸近主張で、閾値 $\lambda_0(\alpha)$ は未知（T91）。** 再監査等級 1.=S0、2.=S1、3.=S1（反映済）。
 旧格付け: `self-audited`（audit104 自身の導出。新しい補題は 1 本も使わず、`E05-P57` 2.〜3.・`E05-P32` 3.・公理 `E05-L4` の初等の代入。敵対的セルフレビューは下の §SR）。
 
@@ -4637,7 +4637,7 @@ w223 `241b_` の 2 光子 MC（0.181）と 3% 一致** ⟹ **(H-dens) は 2 光�
 
 ## E05-P91（(1) 有効質量和則の錨の厳密版 $\langle\epsilon\cdot\pi\psi_0,(H(0)-E_0)^{-1}\epsilon\cdot\pi\psi_0\rangle\le\frac m2$ — 2 階微分可能性も $m_{\rm eff}$ の存在も使わない変分版。**親が採番**）
 
-**格付け**: **`verifier-backed`**（2026-09-14。audit135a（軽いモデル 機械検算、不一致ゼロ、(研究ノート: `135_audit135a_機械検算_2026-09-14.md`)）＋audit135b（監査の型、S2 full fresh audit、盲目再構成で式・定数が一致、反例・循環なし、(研究ノート: `135_audit135b_論理_2026-09-14.md`)）。PATCH P1・P4・P4b・P4c 反映済、再監査等級 S0。ブロック内の (1)・(2) は本連結の 1 つ目・2 つ目のブロックを指す。元は `self-audited`、w238、稿 `135_低帯のDoppler期待値とTheta上界.md` §2、敵対的セルフレビューは同 §6）。
+**格付け**: **`verifier-backed`**（2026-09-14。audit135a（Sonnet 機械検算、不一致ゼロ、(研究ノート: `135_audit135a_機械検算_2026-09-14.md`)）＋audit135b（監査の型、S2 full fresh audit、盲目再構成で式・定数が一致、反例・循環なし、(研究ノート: `135_audit135b_論理_2026-09-14.md`)）。PATCH P1・P4・P4b・P4c 反映済、再監査等級 S0。ブロック内の (1)・(2) は本連結の 1 つ目・2 つ目のブロックを指す。元は `self-audited`、w238、稿 `135_低帯のDoppler期待値とTheta上界.md` §2、敵対的セルフレビューは同 §6）。
 **独立監査は未。再監査等級 S2**（新規の量化子・定義域）。
 
 **命題**（設定: 公理表の模型で $V=0$、$P_{\rm tot}=0$ ファイバー、Coulomb ゲージ、スピンなし、$d=3$、$\Lambda\lt\infty$、$\omega=|k|$、$e\in\mathbb R$ 任意。
@@ -4670,7 +4670,7 @@ $M_{\mu\nu}(0)=G\delta_{\mu\nu}$、$M_\perp(0)=M_\parallel(0)=G\le\frac m2$。**
 
 ## E05-P92（(2) $H(-q)-E_0+|q|\ge\frac{2m}{2m+|q|}(H(0)-E_0)$ — `E05-F23` を 1 径数族として使う作用素不等式。$\Theta(q)\le1+\frac{|q|}{2m}$ と低帯の接続 $M_\perp(|q|)\le\frac m2+\frac{|q|}4$。**親が採番**）
 
-**格付け**: **`verifier-backed`**（2026-09-14。audit135a（軽いモデル 機械検算、不一致ゼロ、(研究ノート: `135_audit135a_機械検算_2026-09-14.md`)）＋audit135b（監査の型、S2 full fresh audit、盲目再構成で式・定数が一致、反例・循環なし、(研究ノート: `135_audit135b_論理_2026-09-14.md`)）。PATCH P1・P4・P4b・P4c 反映済、再監査等級 S0。ブロック内の (1)・(2) は本連結の 1 つ目・2 つ目のブロックを指す。元は `self-audited`、w238、稿 `135_低帯のDoppler期待値とTheta上界.md` §3・§4、敵対的セルフレビューは同 §6）。
+**格付け**: **`verifier-backed`**（2026-09-14。audit135a（Sonnet 機械検算、不一致ゼロ、(研究ノート: `135_audit135a_機械検算_2026-09-14.md`)）＋audit135b（監査の型、S2 full fresh audit、盲目再構成で式・定数が一致、反例・循環なし、(研究ノート: `135_audit135b_論理_2026-09-14.md`)）。PATCH P1・P4・P4b・P4c 反映済、再監査等級 S0。ブロック内の (1)・(2) は本連結の 1 つ目・2 つ目のブロックを指す。元は `self-audited`、w238、稿 `135_低帯のDoppler期待値とTheta上界.md` §3・§4、敵対的セルフレビューは同 §6）。
 **独立監査は未。再監査等級 S2**（新規の作用素不等式・量化子）。
 
 **命題**（設定と記号は (1) と同じ。$`q\in\mathbb R^3\setminus\{0\}`$、$D(q):=H(-q)-E_0+|q|$、$R(q)=D(q)^{-1}$（`E05-P53`・`E05-P83` と同一）、
@@ -4840,7 +4840,7 @@ Gronwall の数値積分は窓の端で $A\le2.63$（有界）、(IH4)(c) 抜き
 - 各 $\Lambda\lt\infty$ で閉じた評価で、$\Lambda\to\infty$（固定 $e$）の漸近命題ではない（**T60**）。**$\delta_0$ の $\Lambda$ 一様性も主張しない**（$\theta\lt\frac12$ が $\delta\lesssim\frac{\pi^2\kappa^2}{\alpha^2\lambda^2}$ を課す）。
 - 1 ループ／有限モードの値（$\frac4{3\pi}\alpha m$、$\Xi\sqrt\lambda\to0.86$、$p\simeq1.83$、$C'\to0.82$、$C_3\to0.040$）は非摂動の上界でも下界でもない（**T88**）。
 
-**監査記録**: (研究ノート: `136_audit138a_機械検算_2026-09-14.md`)（軽いモデル）・(研究ノート: `136_audit138b_論理_2026-09-14.md`)（監査の型、S2 相当の論理監査）・(研究ノート: `136_audit139_S1差分_2026-09-14.md`)（監査の型、S1 差分）。独立再計算 (研究ノート: `281_audit139_constants_recheck.py`)／`_result.json`（`PASS`）。**再監査等級 S0**（以後は記号・算術・文言の訂正のみ）。
+**監査記録**: (研究ノート: `136_audit138a_機械検算_2026-09-14.md`)（Sonnet）・(研究ノート: `136_audit138b_論理_2026-09-14.md`)（監査の型、S2 相当の論理監査）・(研究ノート: `136_audit139_S1差分_2026-09-14.md`)（監査の型、S1 差分）。独立再計算 (研究ノート: `281_audit139_constants_recheck.py`)／`_result.json`（`PASS`）。**再監査等級 S0**（以後は記号・算術・文言の訂正のみ）。
 
 ---
 
@@ -5013,7 +5013,7 @@ $C_2$ は $T=\infty$ の係数で、有限 $T$ の $C_2(\lambda,T)$ は導出し
 
 親注記 2026-09-20: audit149a（機械検算 S0、独立求積が 1.2e-13 で一致）を併記。
 
-**【親注記 2026-09-20】監査記録 (研究ノート: `143_窓因子_audit149b_2026-09-20.md`)（audit149b、監査の型、S2 full fresh）＋ (研究ノート: `143_窓因子_audit149a_2026-09-20.md`)（audit149a、軽いモデル、算術・独立求積）。
+**【親注記 2026-09-20】監査記録 (研究ノート: `143_窓因子_audit149b_2026-09-20.md`)（audit149b、監査の型、S2 full fresh）＋ (研究ノート: `143_窓因子_audit149a_2026-09-20.md`)（audit149a、Sonnet、算術・独立求積）。
 命題 143-1・143-2 の表示は `E05-P70` 1. からの独立再導出で一致し、数値は独立求積で再現、$T\to\infty$ の錨（$L$＝`E05-F1`）と Frullani 係数 $\frac{16\ln2}{3\pi}$ が閉じた。
 (研究ノート: `audit149b.PATCH.md`) P1〜P15 適用済（撤回 0、数値の変更 0。構造的主張の限定 4 件、§7 の費用見積りの訂正 2 件、発注文の因子 4 の誤記 1 件）。
 格付け: verifier-backed（下の 1.・2.・3.）。4. の W1 は「自由 Gauss 期待値の解析評価 vs その MC 推定」の kill-check であって Gibbs サンプラの検証ではない。
@@ -5115,7 +5115,7 @@ $T\to\infty$ で `E05-P96` の $C_2$ に戻ることが錨になる。**⚠ 2 �
 
 **格付け**: **`verifier-backed`**（1.〜5.、audit150a/b、2026-09-20）。**6. は `self-audited`**（値【T88】）。敵対的セルフレビュー 1 ラウンドは稿 `144_` §7（撤回 0・訂正 2・指摘 4）。
 
-**監査記録**: audit150a（`軽いモデル`、機械検算 5 項目一致、(研究ノート: `144_有限T2次係数_audit150a_2026-09-20.md`)）と audit150b（下記【監査記録】）。発注時の監査の重点は
+**監査記録**: audit150a（`Sonnet`、機械検算 5 項目一致、(研究ノート: `144_有限T2次係数_audit150a_2026-09-20.md`)）と audit150b（下記【監査記録】）。発注時の監査の重点は
 (i) 29 項の分類の網羅性（別の縮約列挙で独立再構成）、(ii) 補題 144-B の 3 クラス消滅、
 (iii) §4 の 5 構造の係数・符号、(iv) 規約（対称 vs 伊藤）の扱い、(v) §6 の「窓が空」の算術。
 
@@ -5554,13 +5554,13 @@ audit159 は §1 の流れ換算 $\partial_{\ln\lambda}u|_{\rm acc}=-\frac{\alph
   準背中合わせ帯 $|k+k'|\sim\sqrt{m\Lambda}$ を分解しない）。比の増大を連続体の冪に足して $\gamma$ を推定することはできない【E05-F5】。
 
 **監査記録**: (研究ノート: `149_P104_audit159_2026-09-21.md`)（audit159、`監査の型`、S2、`E05-P104` との合同。判定表 1〜6b、再監査等級 S0）。
-**本監査が生む修正の再監査等級: S0**（ただし稿 `149_` §3 の行 1 への場合分け追加（PATCH P7）だけは S1 相当で、§3 の表と中段だけ `軽いモデル` 1 体の算術照合を推奨）。
+**本監査が生む修正の再監査等級: S0**（ただし稿 `149_` §3 の行 1 への場合分け追加（PATCH P7）だけは S1 相当で、§3 の表と中段だけ `Sonnet` 1 体の算術照合を推奨）。
 
 ---
 
 ## A2-P1（T-A2(0): $`h\ge1+\frac{0.0505\,\alpha}{1+0.581\,\alpha}`$ を $\lambda\ge1$・任意の実 $e\ne0$ で $\Lambda$ 一様に — 1 光子試行 $a^*(f)\psi_0$ の厳密な分子 $eS^\Gamma$・分母恒等式と、Doppler 項の `E05-F23` 形評価。**親が採番**）
 
-**格付け**: **`verifier-backed`**（2026-09-23。aud01a（軽いモデル 機械検算、不一致 0 件、(研究ノート: `A2-aud01a_機械検算_2026-09-23.md`)）＋ aud01b（監査の型、S2 full fresh audit、盲目再構成で評価順序・定数が一致、反例・循環なし、(研究ノート: `A2-aud01b_論理_2026-09-23.md`)）。PATCH P1〜P8 反映済、再監査等級 S0。元は `self-audited`、A2-w01（監査の型）、稿 `A2-003_T-A2-0_hの一様下界.md` §1〜§3、敵対的セルフレビュー 14 項目は (研究ノート: `2026-09-23_A2-w01_頂点不等式.md`) §8。穴 1 件（赤外 $k_1=0$ で $`\|f\|=\infty`$）を修正済、留保 1 件＝稿 §2 の分母恒等式を芯から延長する段で使う「$\pi_\mu:D(H_0)\to D(H_{\rm f}^{1/2})$ の連続性」（aud01b が「(2.2)＋各点三角不等式」で成立を確認し稿 §2 に補筆＝PATCH P1））。
+**格付け**: **`verifier-backed`**（2026-09-23。aud01a（Sonnet 機械検算、不一致 0 件、(研究ノート: `A2-aud01a_機械検算_2026-09-23.md`)）＋ aud01b（監査の型、S2 full fresh audit、盲目再構成で評価順序・定数が一致、反例・循環なし、(研究ノート: `A2-aud01b_論理_2026-09-23.md`)）。PATCH P1〜P8 反映済、再監査等級 S0。元は `self-audited`、A2-w01（監査の型）、稿 `A2-003_T-A2-0_hの一様下界.md` §1〜§3、敵対的セルフレビュー 14 項目は (研究ノート: `2026-09-23_A2-w01_頂点不等式.md`) §8。穴 1 件（赤外 $k_1=0$ で $`\|f\|=\infty`$）を修正済、留保 1 件＝稿 §2 の分母恒等式を芯から延長する段で使う「$\pi_\mu:D(H_0)\to D(H_{\rm f}^{1/2})$ の連続性」（aud01b が「(2.2)＋各点三角不等式」で成立を確認し稿 §2 に補筆＝PATCH P1））。
 （昇格前の「独立監査は未。再監査等級 S2」の行は aud01a/b で解消済み。2026-10-22 論文化の監査 581B で鎖を導き直し、誤りなし＝S0。）
 
 **命題**（設定: 公理表の模型で $V=0$、$P_{\rm tot}$ ファイバー、Coulomb ゲージ、スピンなし、$d=3$、鋭い切断 $|k|\le\Lambda\lt\infty$、$\omega=|k|$。$\psi_0$ は `E05-F22` の基底状態、記号は `E05-P83` 命題欄・`A2-001_STATEMENT.md` §1。$\frac m{m_{\rm eff}}:=\limsup_{p\downarrow0}\frac{2m\mathcal E(p\epsilon)}{p^2}$、$h=\frac{m_{\rm eff}}m$）。
@@ -5588,7 +5588,7 @@ $x=\frac{4\alpha}{3\pi}\ln\frac32$、$\gamma=\frac{2\ln\frac32-\frac12}{2\ln\fra
 
 **【親注記 2026-09-24】** (研究ノート: `A2-w06.PROVED.md`) を連結・採番。分母 (L2) 窓内版。系 3（A2-P3）が代入して使う。
 
-**格付け**: **`verifier-backed`**（2026-09-24。aud04a（軽いモデル、S0）＋ aud04b（監査の型、合同 S2、反例 0、(研究ノート: `A2-aud04b_論理_2026-09-24.md`)）＋ aud05（監査の型、S1 差分→S0: 補題 D 2. の裾 P4 成立、(研究ノート: `A2-aud05_差分_2026-09-24.md`)）。元は `self-audited`、A2-w06（監査の型）、稿 `A2-006_対試行の分母_L2の窓内無条件化.md` §1〜§6、敵対的セルフレビュー 14 項目は同 §8、反例 0 件・射程の修正 1 件）。
+**格付け**: **`verifier-backed`**（2026-09-24。aud04a（Sonnet、S0）＋ aud04b（監査の型、合同 S2、反例 0、(研究ノート: `A2-aud04b_論理_2026-09-24.md`)）＋ aud05（監査の型、S1 差分→S0: 補題 D 2. の裾 P4 成立、(研究ノート: `A2-aud05_差分_2026-09-24.md`)）。元は `self-audited`、A2-w06（監査の型）、稿 `A2-006_対試行の分母_L2の窓内無条件化.md` §1〜§6、敵対的セルフレビュー 14 項目は同 §8、反例 0 件・射程の修正 1 件）。
 **独立監査は未。再監査等級 S2**（新規の定理・量化子・定義域の議論）。
 
 **命題**（設定: 公理表の模型で $V=0$、$P=0$ ファイバー、Coulomb ゲージ、スピンなし、$d=3$、鋭い切断 $|k|\le\Lambda\lt\infty$、$\omega=|k|$、$e\in\mathbb R$ 任意、$m\gt0$。$\psi_0$ は `E05-F22` の基底状態、記号は `E05-P83` 命題欄。$`F_\beta=\frac12\iint\beta\,a^*a^*`$、$`S=\{\frac\Lambda2\le|k|\le\Lambda\}`$、$D_{\rm free}[\beta]=\frac12\iint|\beta|^2(|k_1|+|k_2|+\frac{|k_1+k_2|^2}{2m})$、$`\|\beta\|_2^2=\iint|\beta|^2`$（literal 規約、T58））。
@@ -5622,7 +5622,7 @@ $\bar e=\frac{16\sqrt2}{3\pi}\frac\alpha{\sqrt\lambda}$、$t=\alpha\lambda$、$\
 
 **【親注記 2026-09-24】** (研究ノート: `A2-w05.PROVED.md`) を連結・採番。T-A2(√w)。5.（系 3）が成功条件 (ii) の判定対象。**α=1/137 では一様版の窓が空**（射程文を参照）。
 
-**格付け**: **`verifier-backed`**（2026-09-24。aud04a（軽いモデル、S0）＋ aud04b（監査の型、合同 S2、反例 0、(研究ノート: `A2-aud04b_論理_2026-09-24.md`)）＋ aud05（監査の型、S1 差分→S0、(研究ノート: `A2-aud05_差分_2026-09-24.md`)）。処方 P1〜P13・PA1〜PA3 反映済。元は `self-audited`、A2-w05（監査の型）、稿 `A2-005_対試行の分子と窓つき定理.md`、敵対的セルフレビュー 15 項目は (研究ノート: `2026-09-24_A2-w05_対試行の分子.md`) §6。反例 0、要注記 2（R2 窓の両立、R10 数値的強さ）、修正 1（主定理を点ごと版に））。独立監査は aud04b（監査の型、合同 S2）と aud05（監査の型、S1 差分 → S0）で済んでいる（冒頭の `verifier-backed` と同じ。旧記載「独立監査は未。再監査等級 S2」は連結前の文が残ったもので、2026-10-06 に訂正。`182_` の申し送り、`184_` D5）。**4. は (L2)$_\varepsilon$ 条件付き。**
+**格付け**: **`verifier-backed`**（2026-09-24。aud04a（Sonnet、S0）＋ aud04b（監査の型、合同 S2、反例 0、(研究ノート: `A2-aud04b_論理_2026-09-24.md`)）＋ aud05（監査の型、S1 差分→S0、(研究ノート: `A2-aud05_差分_2026-09-24.md`)）。処方 P1〜P13・PA1〜PA3 反映済。元は `self-audited`、A2-w05（監査の型）、稿 `A2-005_対試行の分子と窓つき定理.md`、敵対的セルフレビュー 15 項目は (研究ノート: `2026-09-24_A2-w05_対試行の分子.md`) §6。反例 0、要注記 2（R2 窓の両立、R10 数値的強さ）、修正 1（主定理を点ごと版に））。独立監査は aud04b（監査の型、合同 S2）と aud05（監査の型、S1 差分 → S0）で済んでいる（冒頭の `verifier-backed` と同じ。旧記載「独立監査は未。再監査等級 S2」は連結前の文が残ったもので、2026-10-06 に訂正。`182_` の申し送り、`184_` D5）。**4. は (L2)$_\varepsilon$ 条件付き。**
 
 **命題**（設定: 公理表の模型で $V=0$、$P_{\rm tot}=0$ ファイバー、Coulomb ゲージ、スピンなし、$d=3$、鋭い切断 $|k|\le\Lambda\lt\infty$、$\omega=|k|$、$e\in\mathbb R$。記号は `E05-P83` 命題欄・`A2-003_` §0。$e=e_\lambda(k)$、$e'=e_{\lambda'}(k')$、$c=c_k$、$s=|k|+|k'|$、$q=k+k'$、$u=\frac{q^2}{2m}$、$\phi_v=v\cdot\pi\psi_0$、$D_2=H(-q)-E_0+s$、$R_2=D_2^{-1}$、$M_2=\langle\pi\psi_0,R_2\pi\psi_0\rangle=M_{2\perp}P_\perp(\hat q)+M_{2\parallel}\hat q\hat q^{\sf T}$。殻 $S=[\frac\Lambda2,\Lambda]$、窓 $`W=\{(k,k')\in S^2:|q|\le\sqrt{2m\Lambda}\}`$。$F_\beta=\frac12\sum\iint\beta a^*a^*$、$\beta$ 実・有界・対称・台 $\subseteq S\times S$、$D_{\rm free}[\beta]=\frac12\sum\iint\beta^2(s+u)$）。
 1. **（TP、定義域つき）** a.e. $(k,k')\in S^2$ で $a(k)a(k')\psi_0\in D(H(-q))$、$D_2a(k)a(k')\psi_0=-\frac{e^2cc'}m(e\cdot e')\psi_0-\frac{ec'}me'\cdot(\pi+k)a(k)\psi_0-\frac{ec}me\cdot(\pi+k')a(k')\psi_0$。$\Phi_\beta\in Q(H(0))$。
@@ -5651,8 +5651,8 @@ $\bar e=\frac{16\sqrt2}{3\pi}\frac\alpha{\sqrt\lambda}$、$t=\alpha\lambda$、$\
 - **命題**: 公理表の模型（$V=0$、$P_{\rm tot}=0$ ファイバー、Coulomb ゲージ、スピンなし、$d=3$、鋭い切断 $|k|\le\Lambda\lt\infty$、$\omega=|k|$）、任意の実 $e\ne0$ と $m\gt0$（$\alpha=\frac{e^2}{4\pi}$、$\lambda=\frac\Lambda m$）、$h$ は `A2-001_` §1 の上極限版。$0\lt\alpha\le\frac1{137}$（とくに $\alpha=1/137.036$）かつ $4\le\lambda\le L$ ならば $`h\ge1+c_*(L)\,\alpha^2\sqrt\lambda`$、$(L,c_*)=(32,1.26\times10^{-3}),(45,9.0\times10^{-4}),(64,3.8\times10^{-4}),(80,1.1\times10^{-4}),(90,2.2\times10^{-5}),(98,1.6\times10^{-8})$。各 $\lambda\in[4,98]$ の詳細形は稿 §4・§5（区間は $v$・$d$ の格子点の丸めを $(1\mp2^{-40})$ 補正で吸収したもの、aud06b）。
 - **根拠**: `A2-005_` 定理 T-A2(√w)（v-b）＋ `A2-006_` 定理 6-1（v-b、$\varepsilon$ は全 $(\alpha,\lambda)$ で成立）に、$C_0(\lambda)\ge C_0^-$・$\rho_B(\lambda)\le\rho_B^+$ の厳密な区間（単調性 + 2 冪格子の内外 Riemann 和 + 四則・sqrt ごとの外向き丸め）を代入。$\alpha$ について単調なので $\alpha_{\rm hi}=1/137$ の定数が $\alpha\le1/137$ 全体で有効。
 - **非主張**: Q3 を解決しない（$h$ の下界＝否定側、T43、オッズ不変）。有界窓 $\lambda\in[4,98]$ のみで $\lambda\to\infty$ について何も言わない（T49）。T-A2(0)（`A2-P1`）より数値的に 2 桁以上弱い。$\lambda\lt4$・$\lambda\gt98$ は主張しない（閉鎖・限界の主張ではない）。
-- **格付け**: **`verifier-backed`**（2026-09-24。aud06a（軽いモデル、S0）＋ aud06b（監査の型、S2、反例 0、(研究ノート: `A2-aud06b_論理_2026-09-24.md`)）＋ aud07（監査の型、S1 差分→S0、(研究ノート: `A2-aud07_差分_2026-09-24.md`)）。処方 12+3 件反映済。元は `self-audited`（敵対的セルフレビュー 1 ラウンド、15 項目、反例 0・要注記 5・修正 0）。
-- **所在**: 稿 `A2-007_系3prime_点ごと版の区間演算.md`、作業記録 (研究ノート: `2026-09-24_A2-w07_区間演算.md`) §4〜§6、数値 (研究ノート: `A2_06N_w07_interval.py`)／`_result.json`（`PASS`、決定的、自己検査 3 本すべて真）。監査: 未監査（推奨: 1 段目 軽いモデル で区間の独立再実装、2 段目 監査の型 で単調性・$\varepsilon$ の有効域の読み〔稿 §0 の R3〕）。
+- **格付け**: **`verifier-backed`**（2026-09-24。aud06a（Sonnet、S0）＋ aud06b（監査の型、S2、反例 0、(研究ノート: `A2-aud06b_論理_2026-09-24.md`)）＋ aud07（監査の型、S1 差分→S0、(研究ノート: `A2-aud07_差分_2026-09-24.md`)）。処方 12+3 件反映済。元は `self-audited`（敵対的セルフレビュー 1 ラウンド、15 項目、反例 0・要注記 5・修正 0）。
+- **所在**: 稿 `A2-007_系3prime_点ごと版の区間演算.md`、作業記録 (研究ノート: `2026-09-24_A2-w07_区間演算.md`) §4〜§6、数値 (研究ノート: `A2_06N_w07_interval.py`)／`_result.json`（`PASS`、決定的、自己検査 3 本すべて真）。監査: 未監査（推奨: 1 段目 Sonnet で区間の独立再実装、2 段目 監査の型 で単調性・$\varepsilon$ の有効域の読み〔稿 §0 の R3〕）。
 
 
 
@@ -5663,8 +5663,8 @@ $\bar e=\frac{16\sqrt2}{3\pi}\frac\alpha{\sqrt\lambda}$、$t=\alpha\lambda$、$\
 - **命題**: 公理表の模型（$V=0$、$P_{\rm tot}=0$ ファイバー、Coulomb ゲージ、スピンなし、$d=3$、鋭い切断 $|k|\le\Lambda\lt\infty$、$\omega=|k|$）、任意の実 $e\ne0$ と $m\gt0$（$\alpha=\frac{e^2}{4\pi}$、$\lambda=\frac\Lambda m$）、$h$ は `A2-001_` §1 の上極限版。$0\lt\alpha\le\frac1{137}$（とくに $\alpha=1/137.036$）かつ $4\le\lambda\le L$（$L\le242$）ならば $`h\ge1+c_*(L)\,\alpha^2\sqrt\lambda`$、$(L,c_*)=(45,1.28\times10^{-3}),(64,8.4\times10^{-4}),(80,5.3\times10^{-4}),(98,2.8\times10^{-4}),(120,1.1\times10^{-4}),(150,2.5\times10^{-5}),(180,3.1\times10^{-6}),(200,3.9\times10^{-7}),(220,1.0\times10^{-8}),(242,1.8\times10^{-21})$。試行は対試行単独 $\beta=(e\cdot e')X$、$X=-\mathrm{sgn}(\epsilon\cdot q)\frac{cc'g_*^+}{\phi(s+u)}\mathbf 1_{W_\sigma}$（殻 $`W_\sigma=\{\sigma\Lambda\le|k|,|k'|\le\Lambda,|k+k'|\le\sqrt{2m\Lambda}\}`$、$g_*$ は点ごとの分子密度を $\alpha_*=1/137$ で評価、$`\sigma\in\{\frac12,\frac9{16},\frac58,\frac{11}{16},\frac34,\frac78\}`$ を $\lambda$ 区間ごとに選ぶ）。付随: (i) 殻 $[\sigma\Lambda,\Lambda]$ の核は $\sigma\ge\frac12$ なら `A2-P2` の $\mathcal B_Q$ と `A2-P3` 1.〜2. のクラスに入り、$\varepsilon$ は `A2-P2` の式のまま；(ii) C–S 最適形では分子の下界と分母 $D_{\rm free}$ が同じ量 $\mathcal I$ で書け、$h\ge1+\frac{16\pi^2\alpha^2\mathcal I}{m^3(1+\varepsilon)}$。
 - **根拠**: `A2-P3` 2.（命題 1）に `A2-005_` §3 の在庫 (i)〜(v) を**点ごと**に入れた分子下界（稿 §2、条件 $\alpha_*\lambda\le\frac{3\pi\sigma}2$）＋ `A2-P2`（定理 6-1）＋ `A2-003_` 補題 1。有限 $\lambda$ の明示積分 $\mathbb I$ の下界を区間演算（2 進格子の内側和、$F$ の単調性、四則・sqrt ごとの外向き丸め、$(1-2^{-40})$）で全実数 $\lambda\in[4,242]$ に。`A2-P4` の窓 $[4,98]$・$c_*(98)=1.6\times10^{-8}$ を拡張（$c_*(98)$ は $1.8\times10^4$ 倍、$c_*(64)$ は 2.2 倍）。
 - **非主張**: Q3 を解決しない（$h$ の下界＝否定側、T43、オッズ不変）。有界窓 $[4,242]$ のみで $\lambda\to\infty$ について何も言わない（T49）。$\lambda_2=242$ は到達点で閉鎖・限界の主張ではない（端を決めるのは余りの C–S＝評価の型）。T-A2(0)（`A2-P1`）より約 3 桁弱い（比 $\le1.4\times10^{-3}$）。$\sigma\lt\frac12$ は扱わない。S-A2-8 の値と定数を混ぜない（T88）。
-- **格付け**: **`verifier-backed`**（2026-09-24。aud08a（軽いモデル、区間の独立再実装で式・区間・窓表を再現、反証 0）＋ aud08b（監査の型、S2 full fresh audit: 点ごとの在庫の量化子・C–S 最適形・$\mathcal B_Q$ の包含・$\alpha$ 単調性・$\lambda$ 区間の最悪端評価を独立に導き直して成立、反例 0、処方 4 件 S0 適用済）。再監査等級 S0。元は `self-audited`（敵対的セルフレビュー 1 ラウンド 15 項目、反例 0・要注記 3・修正 0）。独立監査は未。**再監査等級 S2**（新しい試行核・点ごとの在庫の読み・量化子）。
-- **所在**: 稿 `A2-008_系3double_殻と形の再最適化.md`、作業記録 (研究ノート: `2026-09-24_A2-w09_系3double.md`) §1〜§5、数値 (研究ノート: `A2_08N_w09_interval_sigma.py`)／`_result.json`（`PASS`、決定的、自己検査 3 本真: $\sigma=\frac12$ 固定形で `A2-P4` の $C_0^-$ を再現・格子 4 段で単調収束・$\alpha\to0$ で $c\to C_0$）。監査: 未監査（推奨: 1 段目 軽いモデル で区間の独立再実装、2 段目 監査の型 で稿 §2 の論理と $\alpha$ 単調性）。
+- **格付け**: **`verifier-backed`**（2026-09-24。aud08a（Sonnet、区間の独立再実装で式・区間・窓表を再現、反証 0）＋ aud08b（監査の型、S2 full fresh audit: 点ごとの在庫の量化子・C–S 最適形・$\mathcal B_Q$ の包含・$\alpha$ 単調性・$\lambda$ 区間の最悪端評価を独立に導き直して成立、反例 0、処方 4 件 S0 適用済）。再監査等級 S0。元は `self-audited`（敵対的セルフレビュー 1 ラウンド 15 項目、反例 0・要注記 3・修正 0）。独立監査は未。**再監査等級 S2**（新しい試行核・点ごとの在庫の読み・量化子）。
+- **所在**: 稿 `A2-008_系3double_殻と形の再最適化.md`、作業記録 (研究ノート: `2026-09-24_A2-w09_系3double.md`) §1〜§5、数値 (研究ノート: `A2_08N_w09_interval_sigma.py`)／`_result.json`（`PASS`、決定的、自己検査 3 本真: $\sigma=\frac12$ 固定形で `A2-P4` の $C_0^-$ を再現・格子 4 段で単調収束・$\alpha\to0$ で $c\to C_0$）。監査: 未監査（推奨: 1 段目 Sonnet で区間の独立再実装、2 段目 監査の型 で稿 §2 の論理と $\alpha$ 単調性）。
 
 
 ## E05-P106（(1) $u=m/m_{\rm eff}$ の流れの $P=0$ 形 — $\lambda\partial_\lambda u=-u(1-u)+\mathcal Q$、$\mathcal Q=-\mu^2(\partial_\mu\chi+\chi^2)$。`E05-P104` 2. の片側不等式と 1 点の等号 (A2′) から 1 階条件で出る。$\psi_P$・(A3)・(A4)・光子質量を使わない。**親が採番**）
