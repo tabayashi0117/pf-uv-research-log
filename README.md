@@ -1,6 +1,6 @@
 # pf-uv-research-log
 
-Pauli–Fierz 模型の紫外の極限についての研究を、Claude Code とともに進めた記録です。A record of my study of the ultraviolet limit of the Pauli–Fierz model, carried out with Claude Code.
+Pauli–Fierz 模型の紫外の極限についての研究を、[Claude Code](https://claude.com/claude-code) とともに進めた記録です。A record of my study of the ultraviolet limit of the Pauli–Fierz model, carried out with [Claude Code](https://claude.com/claude-code).
 
 ## 日本語
 
@@ -10,9 +10,10 @@ Pauli–Fierz 模型の紫外の極限についての研究を、Claude Code と
 - 期間:2026-09-02 〜 2026-10-28
 - 論文 I:[The sharp leading asymptotics of the self-energy of the spinless Pauli–Fierz model](https://arxiv.org/abs/2610.34122)
 - 論文 II:[The effective mass of the Pauli–Fierz electron: a cutoff-independent lower bound and the breakdown of mass renormalization](https://arxiv.org/abs/2610.34125)
-- 付属コード:https://github.com/tabayashi0117/pauli-fierz-uv-limit-code
+- 付属コード:[pauli-fierz-uv-limit-code](https://github.com/tabayashi0117/pauli-fierz-uv-limit-code)
+- 関連する解説:[Rikai の Pauli–Fierz 模型の記事](https://rikai.mugen-giken.com/physics/fock-space/pauli-fierz-model)
 
-どちらも 2026-10-28 に Communications in Mathematical Physics に投稿しました(査読中)。ここに書いた検証は AI の監査と私の確認によるもので、外部の査読はこれからです。
+どちらも 2026-10-28 に [Communications in Mathematical Physics](https://link.springer.com/journal/220) に投稿しました(査読中)。ここに書いた検証は AI の監査と私の確認によるもので、外部の査読はこれからです。
 
 | 場所 | 中身 |
 |---|---|
@@ -20,9 +21,9 @@ Pauli–Fierz 模型の紫外の極限についての研究を、Claude Code と
 | [book/ja/02_証明と失敗.md](book/ja/02_証明と失敗.md) | 証明の検証、初等化、手詰まりの抜け方、失敗 |
 | [book/ja/03_数値計算.md](book/ja/03_数値計算.md) | 6 台のマシン、資源の管理、ジョブの設計 |
 | [book/ja/04_AIとの協業.md](book/ja/04_AIとの協業.md) | 分担、台帳、成算、集中攻撃、フック |
-| `catalog/` | 失敗の全件の索引 |
-| `data/ledgers/` | 台帳の写し(2026-10-27 時点、機械で整理したもの) |
-| `rules/` | 運用の規則の実物(AI に読ませた文章のまま) |
+| [catalog/failures_index.md](catalog/failures_index.md) | 失敗の全件の索引 |
+| [data/ledgers/](data/ledgers/README.md) | 台帳の写し(2026-10-27 時点、機械で整理したもの) |
+| [rules/](rules/README.md) | 運用の規則の実物(AI に読ませた文章のまま) |
 
 ## English
 
@@ -31,9 +32,10 @@ Papers report only the paths that worked. Most of this study was approaches trie
 - Author: Shin-ichiro Tabayashi (papers published under my former name, S. Futakuchi)
 - Period: 2026-09-02 to 2026-10-28
 - Paper I: [arXiv:2610.34122](https://arxiv.org/abs/2610.34122); Paper II: [arXiv:2610.34125](https://arxiv.org/abs/2610.34125)
-- Ancillary code: https://github.com/tabayashi0117/pauli-fierz-uv-limit-code
+- Ancillary code: [pauli-fierz-uv-limit-code](https://github.com/tabayashi0117/pauli-fierz-uv-limit-code)
+- Background (in Japanese): [the Pauli–Fierz article on Rikai](https://rikai.mugen-giken.com/physics/fock-space/pauli-fierz-model)
 
-Both papers were submitted to Communications in Mathematical Physics on 2026-10-28 and are under review. The checks described here were done by AI audits and by me; external peer review is still ahead.
+Both papers were submitted to [Communications in Mathematical Physics](https://link.springer.com/journal/220) on 2026-10-28 and are under review. The checks described here were done by AI audits and by me; external peer review is still ahead.
 
 | Where | What |
 |---|---|
@@ -41,8 +43,8 @@ Both papers were submitted to Communications in Mathematical Physics on 2026-10-
 | [book/en/02_proofs_and_failures.md](book/en/02_proofs_and_failures.md) | Proof checking, simplification, getting unstuck, failures |
 | [book/en/03_numerics.md](book/en/03_numerics.md) | Six machines, resource management, job design |
 | [book/en/04_working_with_ai.md](book/en/04_working_with_ai.md) | Division of labour, ledgers, feasibility estimates, all-out attacks, hooks |
-| `catalog/`, `data/ledgers/`, `rules/` | Failure index, ledger copies and rules (Japanese originals) |
+| [catalog/](catalog/failures_index.md), [data/ledgers/](data/ledgers/README.md), [rules/](rules/README.md) | Failure index, ledger copies and rules (Japanese originals) |
 
 ## License
 
-Text and data: CC BY 4.0 (`LICENSE`). Code: MIT (`LICENSE-CODE`).
+Text and data: CC BY 4.0 ([`LICENSE`](LICENSE)). Code: MIT ([`LICENSE-CODE`](LICENSE-CODE)).

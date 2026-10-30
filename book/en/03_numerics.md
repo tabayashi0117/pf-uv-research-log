@@ -51,7 +51,7 @@ The values of the finished cells already showed the direction of the answer. Bec
 
 ## Rules before launch
 
-From this review came the rules before submitting a job.
+From this review came the rules before submitting a job. The actual text is in [`rules/研究運用.md`](../../rules/研究運用.md) (in Japanese).
 
 - Run one unit of the cell that decides the verdict first, with the production specification on the production machine, and estimate the wall-clock time from the measurement.
 - Run the cells that decide the verdict first.

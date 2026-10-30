@@ -14,7 +14,7 @@ Terms as in the earlier chapters. Here the *coordinator* is the parent session (
 
 Writing out proofs and computing were done by the AI. What to ask, what to claim, where not to stop, and what to doubt, I decided. The principle at the boundary is that the human decides "what to claim" and leaves "how to show it" to the AI. Any change to the wording, quantifiers, or reading of a main theorem requires my approval.
 
-The core was Claude Code, and other AIs were used for part of the review. A proposal from outside, from whichever AI, was treated as input that had not passed an audit, and was checked in Claude's audit types, separating the wording, the mathematics, and the effect.
+The core was [Claude Code](https://claude.com/claude-code), and other AIs were used for part of the review. A proposal from outside, from whichever AI, was treated as input that had not passed an audit, and was checked in Claude's audit types, separating the wording, the mathematics, and the effect.
 
 Our judgments sometimes diverged. The AI's recommendations leaned toward saving resources, and mine toward not letting go of the question. I declined the proposal to downgrade all λ. On the number of papers, I did not take the coordinator's three-paper plan and went with two, which other AIs' reviews had also favored.
 
@@ -22,7 +22,7 @@ Our judgments sometimes diverged. The AI's recommendations leaned toward saving 
 
 | Type | Job |
 |---|---|
-| Audit type (heavy model, high reasoning effort) | Audits only |
+| [Audit type](../../rules/監査の型.md) (heavy model, high reasoning effort) | Audits only |
 | Writing type (heavy model, medium reasoning effort) | Proofs, kill-checks, design reconnaissance, numerics design |
 | Mechanical type (light model) | Applying patch instructions verbatim, linking ledgers |
 | Hard-case type (top-tier model) | Only when I explicitly call it. Rethinking overall policy and independent audits of the papers |
@@ -41,12 +41,12 @@ An AI session does not remember the earlier conversation. So all of the state of
 
 | Ledger | What it holds | How it is written |
 |---|---|---|
-| PROVED | The master copy of claims whose proofs passed | Append. The body is not changed; corrections pile up as notes |
-| FAILED | Closed schemes, with the reason for closure, the reach, and the condition for reopening | Append only |
+| [PROVED](../../data/ledgers/PROVED_E05.md) | The master copy of claims whose proofs passed | Append. The body is not changed; corrections pile up as notes |
+| [FAILED](../../data/ledgers/FAILED_E05.md) | Closed schemes, with the reason for closure, the reach, and the condition for reopening | Append only |
 | Feasibility estimates | Rough estimates | Append |
-| NUMERICS_FACTS | Numerical facts, one per line | Append, shared across themes |
+| [NUMERICS_FACTS](../../data/ledgers/NUMERICS_FACTS_E05.md) | Numerical facts, one per line | Append, shared across themes |
 | Remaining-conditions ledger | Unproved conditions remaining for the main target | Rewrite |
-| STATEMENT | The statements of the main theorems and the target formulas | Changes require my approval |
+| [STATEMENT](../../data/ledgers/STATEMENT_G3_E05.md) | The statements of the main theorems and the target formulas | Changes require my approval |
 | STATUS | Current position | Fully rewritten each time, 8KB limit |
 
 The principle fits in one sentence. What must not disappear is append-type, what must be short is rewrite-type, and the full text of a proposition is kept in one place only.
@@ -112,12 +112,12 @@ The mechanism that keeps the coordinator from stopping worked best.
 The coordinator would stop merely because it was waiting for a computation, and each time I said "list what can be done now and start on it". So I made three layers.
 
 1. **The order queue READY.** When the coordinator tries to stop, a hook reads the table, and if issuable orders remain, it does not let it stop (October 19).
-2. **The periodic patrol `g-patrol`.** Every hour it runs collecting jobs, jobs waiting to be submitted, READY, replenishment, review of stagnation, and checkpoints (October 21).
+2. **The periodic patrol [`g-patrol`](../../rules/g-patrol.md).** Every hour it runs collecting jobs, jobs waiting to be submitted, READY, replenishment, review of stagnation, and checkpoints (October 21).
 3. **The hook before stopping.** If fewer than 3 workers are running and there is no patrol record in the last 20 minutes, it does not let it stop.
 
 The workers' manners also come mostly from accidents. Workers do not touch git. They do not write to ledgers directly either, but put finished text in an inbox. Orders are written in files, not in conversation. A work log gets its skeleton first, and one write is about 150 lines.
 
-Revisions of the rules came to 87 between September 2 and October 27. There is a sense of too many. Few rules turned out wrong, and reviewing them is the next task.
+Revisions of the rules came to [87](../../rules/規約の改訂履歴.md) between September 2 and October 27. There is a sense of too many. Few rules turned out wrong, and reviewing them is the next task.
 
 ## 7. How I verified the enormous output
 

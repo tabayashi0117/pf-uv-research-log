@@ -2,7 +2,7 @@
 
 This chapter covers three things: how I tried to close the gaps in the proofs, what I did when every road was blocked, and what failed. The full index is in [`catalog/failures_index.md`](../../catalog/failures_index.md).
 
-Terms as in Chapter 1: a *note* is a numbered research write-up, a *worker* is a Claude Code agent doing a delimited job, an *audit* is a check by an agent other than the author, the *ledgers* (FAILED, PROVED, and so on) hold the state of the research, and *Rikai* is my textbook site. The *all-λ problem* is the full-sequence problem of showing $h\to\infty$ for all $\lambda$. The *named condition* is an unproved condition singled out as the remaining target, and a *feasibility estimate* is a rough estimate of whether a target is worth attacking.
+Terms as in [Chapter 1](01_history.md): a *note* is a numbered research write-up, a *worker* is a [Claude Code](https://claude.com/claude-code) agent doing a delimited job, an *audit* is a check by an agent other than the author, the *ledgers* ([FAILED](../../data/ledgers/FAILED_E05.md), [PROVED](../../data/ledgers/PROVED_E05.md), and so on) hold the state of the research, and *Rikai* is my textbook site. The *all-λ problem* is the full-sequence problem of showing $h\to\infty$ for all $\lambda$. The *named condition* is an unproved condition singled out as the remaining target, and a *feasibility estimate* is a rough estimate of whether a target is worth attacking.
 
 ## 1. Aiming for a proof without gaps
 
@@ -26,7 +26,7 @@ Among the notes, those with an audit type in the name number more than 150.
 
 ### Rewriting for Rikai
 
-What worked was rewriting the content of the papers from scratch as research notes on the textbook site Rikai (administrators only; not public). For Papers I and II this comes to 7 notes and about 8,200 lines. The density is one a master's student can read, with every step written out. I followed each revision of the papers, and rewrote it 6 times, up to following the CMP version the day after submission.
+What worked was rewriting the content of the papers from scratch as research notes on the textbook site [Rikai](https://rikai.mugen-giken.com/) (these notes are for administrators only and not public; the public background articles include [the Pauli–Fierz model](https://rikai.mugen-giken.com/physics/fock-space/pauli-fierz-model), [fibers and the dipole approximation](https://rikai.mugen-giken.com/physics/fock-space/pauli-fierz-fibers-dipole) and [the effective mass of fiber families](https://rikai.mugen-giken.com/physics/fock-space/fiber-effective-mass), in Japanese). For Papers I and II this comes to 7 notes and about 8,200 lines. The density is one a master's student can read, with every step written out. I followed each revision of the papers, and rewrote it 6 times, up to following the CMP version the day after submission.
 
 Auditing workers read with the same premises as the research notes, so they skim over the obvious places. A rewriting worker rederives, so it gets stuck there. Some flaws actually found:
 
@@ -41,7 +41,7 @@ All of these survived in a manuscript that had passed the audits. Even if the co
 
 ### The gaps still remained
 
-I write the Lemma 8.2 gap (Chapter 1) once more here. It was pointed out on October 26 and confirmed by audit on the 28th.
+I write the Lemma 8.2 gap ([Chapter 1](01_history.md)) once more here. It was pointed out on October 26 and confirmed by audit on the 28th.
 
 This lemma passed the independent-audit layer, passed the top-tier model's "no gaps", passed my own read-through, and went onto arXiv. What found it was yet another AI in the referee role. When I audited the point, the verdict was that the gap is real but the claim is not false and can be repaired.
 
@@ -129,9 +129,9 @@ The AI's errors concentrated at the joints more than in simple miscalculation.
 | A lemma that should have passed is false | Lemma 571-H (ii): a verifier-backed line was literally false (F403) |
 | Only moving the difficulty | Corollary 639-T′: F449 |
 | Overclaimed novelty | Proposition 486-U: correct but already in prior work. "No precedent" was written without stating the scope of the search |
-| Missed literature | Note 684: wrote "an upper bound cannot be proved" in exhaustive form, but there was a result of Fröhlich–Pizzo |
+| Missed literature | Note 684: wrote "an upper bound cannot be proved" in exhaustive form, but there was a result of [Fröhlich–Pizzo](https://doi.org/10.1007/s00220-009-0960-8) |
 | Overrated self-assessment | Another AI's "fully verified" and "ready for immediate submission" |
-| Misreporting a citation | The introduction of Paper II described a result of Lieb–Loss (2002) inaccurately (corrected in the pre-submission check) |
+| Misreporting a citation | The introduction of Paper II described a result of [Lieb–Loss (2002)](https://doi.org/10.1023/A:1019870931077) inaccurately (corrected in the pre-submission check) |
 
 Within a single note everything looks coherent, so the author worker's self-check does not find these. Confidence of prose has nothing to do with correctness.
 
@@ -145,4 +145,4 @@ Failures outside mathematics took just as much time.
 - A command that stops processes by image name also killed jobs of other work.
 - The handoff file read at startup swelled to 76KB.
 
-Every one of these became a rule or a hook in Chapter 4.
+Every one of these became a rule or a hook in [Chapter 4](04_working_with_ai.md).

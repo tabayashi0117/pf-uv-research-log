@@ -2,21 +2,21 @@
 
 Quotations of my instructions in this book are translated from Japanese.
 
-This is a record of about eight weeks, from September 2 to October 28, 2026. I pursued the question of the ultraviolet limit of the Pauli–Fierz model (PF below) together with Claude Code. In my research notes it is called "E05".
+This is a record of about eight weeks, from September 2 to October 28, 2026. I pursued the question of the ultraviolet limit of the Pauli–Fierz model (PF below) together with [Claude Code](https://claude.com/claude-code). In my research notes it is called "E05".
 
 A paper contains only the road that worked. Here I write down the rest.
 
-A few terms first, each explained once. A *note* is one numbered research write-up produced during the work. The *ledgers* are the files that hold the state of the research: PROVED (claims whose proofs passed), FAILED (approaches that were closed), and a ledger of *feasibility estimates* (rough estimates of whether a target is worth attacking). A *worker* is a Claude Code agent that does a delimited job (writing a proof, auditing, running numerics), and the *coordinator* (parent session) is the session that designs and issues the jobs and collects the results. An *audit* is a check of a claim by an agent other than the one that wrote it. A *named condition* is an unproved condition that I name as the remaining target. A *value* is a number obtained numerically, as opposed to a proved bound.
+A few terms first, each explained once. A *note* is one numbered research write-up produced during the work. The *ledgers* are the files that hold the state of the research: [PROVED](../../data/ledgers/PROVED_E05.md) (claims whose proofs passed), [FAILED](../../data/ledgers/FAILED_E05.md) (approaches that were closed), and a ledger of *feasibility estimates* (rough estimates of whether a target is worth attacking). A *worker* is a Claude Code agent that does a delimited job (writing a proof, auditing, running numerics), and the *coordinator* (parent session) is the session that designs and issues the jobs and collects the results. An *audit* is a check of a claim by an agent other than the one that wrote it. A *named condition* is an unproved condition that I name as the remaining target. A *value* is a number obtained numerically, as opposed to a proved bound.
 
 ## The question and the results
 
 The question was a single one. In a model of one nonrelativistic electron coupled to the quantized electromagnetic field, what remains when the photon momentum cutoff $\Lambda$ is sent to infinity?
 
-For the dipole approximation, which drops the phase depending on the electron position, the answer is known. As the cutoff is raised, the effective mass grows in proportion to the cutoff, so if the physical mass is held fixed, the model ends at a finite cutoff. For the full PF model without the approximation, it was not known whether the same thing happens or whether electron recoil produces different behavior. Lieb–Loss (2002) expected a breakdown but gave no proof, and the suggestion of Hiroshima–Spohn (2005) pointed to the opposite side.
+For the dipole approximation, which drops the phase depending on the electron position, the answer is known. As the cutoff is raised, the effective mass grows in proportion to the cutoff, so if the physical mass is held fixed, the model ends at a finite cutoff. For the full PF model without the approximation, it was not known whether the same thing happens or whether electron recoil produces different behavior. [Lieb–Loss (2002)](https://doi.org/10.1023/A:1019870931077) expected a breakdown but gave no proof, and the suggestion of [Hiroshima–Spohn (2005)](https://doi.org/10.1063/1.1852699) pointed to the opposite side.
 
 I summarized the results in two papers (the author name is my former name, S. Futakuchi).
 
-**Paper I**: *The sharp leading asymptotics of the self-energy of the spinless Pauli–Fierz model* (arXiv:2610.34122)
+**Paper I**: [*The sharp leading asymptotics of the self-energy of the spinless Pauli–Fierz model*](https://arxiv.org/abs/2610.34122) ([arXiv:2610.34122](https://arxiv.org/abs/2610.34122))
 
 For the spinless PF model with a sharp cutoff and any fixed $\alpha=e^2/4\pi\gt0$, the ground-state energy satisfies
 
@@ -24,9 +24,9 @@ For the spinless PF model with a sharp cutoff and any fixed $\alpha=e^2/4\pi\gt0
 E_0(\alpha,\Lambda)=(1+o(1))\,c_\alpha\,\alpha^{2/7}\Lambda^{12/7}\qquad(\Lambda\to\infty),\quad c_\alpha=0.99338\ldots
 ```
 
-Lieb–Loss (1999) had squeezed $E_0$ between $\alpha^{1/2}\Lambda^{3/2}$ and $\alpha^{2/7}\Lambda^{12/7}$. So the upper power is sharp up to the constant.
+[Lieb–Loss (1999)](https://arxiv.org/abs/math-ph/9908020) had squeezed $E_0$ between $\alpha^{1/2}\Lambda^{3/2}$ and $\alpha^{2/7}\Lambda^{12/7}$. So the upper power is sharp up to the constant.
 
-**Paper II**: *The effective mass of the Pauli–Fierz electron: a cutoff-independent lower bound and the breakdown of mass renormalization* (arXiv:2610.34125)
+**Paper II**: [*The effective mass of the Pauli–Fierz electron: a cutoff-independent lower bound and the breakdown of mass renormalization*](https://arxiv.org/abs/2610.34125) ([arXiv:2610.34125](https://arxiv.org/abs/2610.34125))
 
 Let $h=m_{\rm eff}/m$ and $\lambda=\Lambda/m$.
 
@@ -34,7 +34,7 @@ Let $h=m_{\rm eff}/m$ and $\lambda=\Lambda/m$.
 - For fixed $\alpha\gt0$ and any $\epsilon\gt0$, $h\ge\lambda^{8/7-\epsilon}$ once $\lambda$ is large enough. The effective mass grows faster than the cutoff.
 - Hence $\iota_{\rm PF}(\alpha)=\inf_{\lambda}h/\lambda\gt0$, and if the physical mass $m_{\rm phys}$ is held fixed, the cutoff is confined to $\Lambda\le m_{\rm phys}/\iota_{\rm PF}(\alpha)$. This is the obstruction that Lieb–Loss predicted.
 
-I posted both to arXiv on October 25, and submitted revised versions to Communications in Mathematical Physics (CMP) on October 28. Refereeing is still ahead.
+I posted both to arXiv on October 25, and submitted revised versions to [Communications in Mathematical Physics](https://link.springer.com/journal/220) (CMP) on October 28. Refereeing is still ahead.
 
 ## Overall map
 
@@ -104,7 +104,7 @@ The J-G chain, as it was, fixed the leading term of the self-energy up to the co
 
 The largest remaining question was whether the family of mass renormalizations continues. The literature was split. I recast it as a dichotomy, $\iota_{\rm PF}=\inf_\lambda h/\lambda$ is positive or zero, and then reduced it further to "if $h\ge c\lambda$ above some $\lambda_1$, then $\iota\gt0$". $\lambda_1$ may be astronomical. This one line made it clear that if something turns negative within the range computation can reach, the road to a proof is not closed.
 
-The numerics pointed to the $\iota\gt0$ side (Chapter 3). I gave this instruction:
+The numerics pointed to the $\iota\gt0$ side ([Chapter 3](03_numerics.md)). I gave this instruction:
 
 > Make the all-out attack on the named condition. Prove ι>0 at all costs. Try every approach you can think of. Lift the limit on the number of workers. Bulldoze: try every road that has even a small chance, and eliminate the dead routes. Smash it.
 
@@ -116,13 +116,13 @@ I had started turning this into papers on the morning of October 22. I wrote Pap
 
 ## Shortening the proofs (October 23–25)
 
-The manuscripts existed, but they were not readable. The AI referee said some parts looked like "compressed research notes written by an AI". Intermediate steps of the research were left stacked up, with terms (a) to (q) and design conditions (D1) to (D7) in a row. From here I spent three days checking whether it could be done elementarily (Chapter 2).
+The manuscripts existed, but they were not readable. The AI referee said some parts looked like "compressed research notes written by an AI". Intermediate steps of the research were left stacked up, with terms (a) to (q) and design conditions (D1) to (D7) in a row. From here I spent three days checking whether it could be done elementarily ([Chapter 2](02_proofs_and_failures.md)).
 
 On October 24 I decided to recast the work as two papers. The AI favored keeping three and making B a short note, but I went with coherence of subject. Paper I is the old A, and Paper II is the first half of the old B plus the old C. Paper I went from 39 to 36 pages, and Paper II from 84 pages (old B and C together) to 57 (the arXiv versions are 36 and 62 pages). The strong form had been found by a different route on the 23rd; during the audit of the recasting, it turned out that $h\ge\lambda^{8/7-\epsilon}$ also follows from the proof of Paper II, so I raised it to a main theorem.
 
-In parallel, I rewrote the content as research notes on the textbook site Rikai, and ran a review by another AI as referee. On October 25 I finished the final pre-submission checks (machine matching of the bibliography, matching the content of the citations, a final review that is not shown the past audits), read the whole text myself to confirm, and posted to arXiv. I left the submission operations to the AI, but I approved the consent, the subject class, and the send one by one. The accompanying code went into a public repository containing only the files attached to the papers; I confirmed it was public on October 27.
+In parallel, I rewrote the content as research notes on the textbook site [Rikai](https://rikai.mugen-giken.com/), and ran a review by another AI as referee. On October 25 I finished the final pre-submission checks (machine matching of the bibliography, matching the content of the citations, a final review that is not shown the past audits), read the whole text myself to confirm, and posted to arXiv. I left the submission operations to the AI, but I approved the consent, the subject class, and the send one by one. The accompanying code went into a [public repository](https://github.com/tabayashi0117/pauli-fierz-uv-limit-code) containing only the files attached to the papers; I confirmed it was public on October 27.
 
-While matching the self-energy, I noticed that the leading coefficient disagreed with the coefficient in a theorem of Bach–Hach (2022). Our result does not use that constant. The tracing of the discrepancy is written in Appendix A of Paper I.
+While matching the self-energy, I noticed that the leading coefficient disagreed with the coefficient in a theorem of [Bach–Hach (2022)](https://doi.org/10.1007/s00023-021-01124-2). Our result does not use that constant. The tracing of the discrepancy is written in Appendix A of Paper I.
 
 ## After arXiv: the gaps were still there (October 26–28)
 
@@ -134,7 +134,7 @@ I put the question of whether the points were valid through audit too. Paper I h
 
 Commutation on a core of unbounded operators does not imply strong commutation. The paper wrote $X_{\rm in}=1\otimes\tilde X_{\rm in}$ from commutation on a core, and the steps of domain and extension of forms were missing. The same omission was in Theorem 8.8. The claim is not false, and it could be repaired by constructing a form core for the product from the exponential law for finitely many modes and a metaplectic transformation. The main theorems are unaffected. I sent the repair through a blind check as well, which found one more missing step, and I replaced it before applying.
 
-This gap slipped through many layers of audit and appeared in v1 on arXiv. An independent audit by the top-tier model also reported "no gaps". As I say in Chapter 2, this is one of the most important records for me.
+This gap slipped through many layers of audit and appeared in v1 on arXiv. An independent audit by the top-tier model also reported "no gaps". As I say in [Chapter 2](02_proofs_and_failures.md), this is one of the most important records for me.
 
 For CMP I also did the following.
 
