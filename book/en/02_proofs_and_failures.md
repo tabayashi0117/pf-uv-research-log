@@ -32,7 +32,6 @@ Auditing agents read with the same premises as the notes from the research, so t
 - The definition of the side $n_e$ of the electron box did not match between Papers I and II, so a step of Paper I could not be cited as it stood.
 - Nothing guaranteed that the window constants hold simultaneously.
 - Translation covariance was used without a lemma.
-- The power of the distance, $b^{-1/3}$, did not match the count in the text ($b^{-1/2}$).
 - A dropped factor, an inconsistent dimension of a constant, a missing domain in a lemma.
 
 All of these survived in a manuscript that had passed the audits. Even if the conclusion does not change, in a paper these are gaps. Every proofreading turned up the next one, so I proofread many times.
