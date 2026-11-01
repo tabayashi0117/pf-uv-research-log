@@ -156,6 +156,8 @@ All of the verification described here stays within the AI's audits and my own c
 - The value of $\iota$, the true power of $h$, and the model with an external field are unresolved. The numerical local exponent is as above, but this is a value, not a theorem.
 - For the spin-1/2 model, this chain does not carry over as it stands.
 
+Conjectures for variants such as the spin model are collected in [the Rikai article](https://rikai.mugen-giken.com/physics/fock-space/pf-variants-conjectures) (in Japanese).
+
 ## On scope
 
 This record is limited to what concerns Papers I and II. Investigations made along the way that do not concern them are not included. Where I touch the work of other researchers, I wrote only technical facts. On the use of AI I take the same position as the disclosure statement in the papers: I, the author, am responsible for the claims and proofs. The AI is not an author.

@@ -10,6 +10,7 @@ Pauli–Fierz 模型の紫外の極限についての研究を、[Claude Code](h
 - 期間:2026-09-02 〜 2026-10-28
 - 論文 I:[The sharp leading asymptotics of the self-energy of the spinless Pauli–Fierz model](https://arxiv.org/abs/2610.34122)
 - 論文 II:[The effective mass of the Pauli–Fierz electron: a cutoff-independent lower bound and the breakdown of mass renormalization](https://arxiv.org/abs/2610.34125)
+- 変種の予想表:[Rikai の記事](https://rikai.mugen-giken.com/physics/fock-space/pf-variants-conjectures)
 - 付属コード:[pauli-fierz-uv-limit-code](https://github.com/tabayashi0117/pauli-fierz-uv-limit-code)
 - 解説:[Rikai の研究ノート(論文 I・II の案内)](https://rikai.mugen-giken.com/physics/fock-space/research-2026-10-u)
 
@@ -32,6 +33,7 @@ Papers report only the paths that worked. Most of this study was approaches trie
 - Author: Shin-ichiro Tabayashi (papers published under my former name, S. Futakuchi)
 - Period: 2026-09-02 to 2026-10-28
 - Paper I: [arXiv:2610.34122](https://arxiv.org/abs/2610.34122); Paper II: [arXiv:2610.34125](https://arxiv.org/abs/2610.34125)
+- Conjectures for variants (in Japanese): [Rikai article](https://rikai.mugen-giken.com/physics/fock-space/pf-variants-conjectures)
 - Ancillary code: [pauli-fierz-uv-limit-code](https://github.com/tabayashi0117/pauli-fierz-uv-limit-code)
 - Notes (in Japanese): [guide to the Rikai research notes on Papers I and II](https://rikai.mugen-giken.com/physics/fock-space/research-2026-10-u)
 
